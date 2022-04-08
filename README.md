@@ -1,4 +1,4 @@
-# Audi RMC: Codin, Adaptation, Datasets
+# Audi RMC: Coding, Adaptation, Datasets
 Figuring out how #Audi #RMC system is configurable by testing coding, adaptation and datasets.
 This type of infotainment unit is poorly codumented. I hope this is about to be changed.
 I'm basinc my research on 2012 Audi Q3 equipped with Audi RMC non-navigation unit.
@@ -15,6 +15,8 @@ Depending on vehicle and unit version, RMC can be accessed via address `0x56` or
 * `005` - `0` - developer mode off, `1` developer mode on.
 
 ## Dataset ##
+
+## BAP ##
 
 ## GEM - Green Engineering Menu ##
 * Requires to be enabled first with adaptation.
