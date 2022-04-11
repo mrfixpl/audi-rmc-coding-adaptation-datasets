@@ -14,9 +14,17 @@ Depending on vehicle and unit version, RMC can be accessed via address `0x56` or
 ## Adaptation ##
 * `005` - `0` - developer mode off, `1` developer mode on.
 
-## Dataset ##
+## Datasets ##
+RMC features and settings in EEPROM
+* `F005C0` - Car Menu: Wiper Service + Rain Sensor
+* `F00610` - Car Menu: Audi Drive Select (Charisma)
+* `F00630` - Car Menu: VIN + Keys
+* `F006F0` - Car Menu: Custom button MFSW (Joker)
+* `F00F00` - Language: factory default
+* `F01100` - Language: visible languages
 
 ## BAP ##
+Features available on RMC screen that are coding in other modules and information about it is send over BAP.
 
 ## GEM - Green Engineering Menu ##
 * Requires to be enabled first with adaptation.
