@@ -27,8 +27,14 @@ RMC features and settings in EEPROM
 Features available on RMC screen that are coding in other modules and information about it is send over BAP.
 
 ## GEM - Green Engineering Menu ##
-* Requires to be enabled first with adaptation.
-* Enter it with key combination.
+* Requires developer mode to be enabled first (check adaptation above).
+* Enter GEM with key combination.
 
 ## REM - Red Engineering Menu ##
 * Enter it with key combination.
+
+## System reboot ##
+* Key combination
+
+## Display screenshot ##
+* Key combination
