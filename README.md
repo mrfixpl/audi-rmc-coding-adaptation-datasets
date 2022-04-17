@@ -4,7 +4,8 @@ This type of infotainment unit is poorly codumented. I hope this is about to be 
 I'm basinc my research on 2012 Audi Q3 equipped with Audi RMC non-navigation unit.
 
 ## How to tell if I have RMC or other system? ##
-Enter Red Engineering Menu and check what's your software train. Audi RMC system firmware starts with `rmc`.
+* Enter Red Engineering Menu and check what's your software train. Audi RMC system firmware starts with `rmc`.
+* https://youtu.be/R2mUmxFPWBQ
 
 ## Control Module address ##
 Depending on vehicle and unit version, RMC can be accessed via address `0x56` or `0x5F`.
@@ -29,12 +30,17 @@ Features available on RMC screen that are coding in other modules and informatio
 ## GEM - Green Engineering Menu ##
 * Requires developer mode to be enabled first (check adaptation above).
 * Enter GEM with key combination.
+* https://youtu.be/jGcJXQZLzEc
 
 ## REM - Red Engineering Menu ##
 * Enter it with key combination.
+* https://youtu.be/PRefnQfClug
 
 ## System reboot ##
 * Key combination
 
 ## Display screenshot ##
-* Key combination
+* Make sure there's an SD card inserted and it's not write protected.
+* Press and hold buttons [<] and [>].
+* Wait for LED confirmation on the control panel.
+* https://youtu.be/ASmqbM54rZk
