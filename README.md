@@ -1,9 +1,10 @@
 # Audi RMC: Coding, Adaptation, Datasets
-Figuring out how #Audi #RMC system is configurable by testing coding, adaptation and datasets.
+Figuring out how Audi RMC system is configurable by testing coding, adaptation, datasets, and BAP.
 This type of infotainment unit is poorly codumented. I hope this is about to be changed.
-I'm basinc my research on 2012 Audi Q3 equipped with Audi RMC non-navigation unit.
+My research is based on a 2012 Audi Q3 equipped with Audi RMC2 non-navigation unit.
 
 ## How to tell if I have RMC or other system? ##
+* There are different versions of the RMC system, nav and non-nav, with 6.5" and 7" displays.
 * Enter Red Engineering Menu and check what's your software train. Audi RMC system firmware starts with `rmc`.
 * https://youtu.be/R2mUmxFPWBQ
 
@@ -16,7 +17,7 @@ Depending on vehicle and unit version, RMC can be accessed via address `0x56` or
 * `005` - `0` - developer mode off, `1` developer mode on.
 
 ## Datasets ##
-RMC features and settings in EEPROM
+Confirmed Audi RMC features and settings in EEPROM
 * `F005C0` - Car Menu: Wiper Service + Rain Sensor
 * `F00610` - Car Menu: Audi Drive Select (Charisma)
 * `F00630` - Car Menu: VIN + Keys
