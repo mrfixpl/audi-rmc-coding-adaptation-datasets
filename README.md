@@ -32,13 +32,44 @@ Depending on vehicle and unit version, RMC can be accessed via address `0x56` or
 * `005` - `0` - developer mode off, `1` developer mode on.
 
 ## Datasets ##
-Confirmed Audi RMC features and settings in EEPROM
-* `F005C0` - Car Menu: Wiper Service + Rain Sensor
-* `F00610` - Car Menu: Audi Drive Select (Charisma)
-* `F00630` - Car Menu: VIN + Keys
-* `F006F0` - Car Menu: Custom button MFSW (Joker)
-* `F00F00` - Language: factory default
-* `F01100` - Language: visible languages
+Audi RMC features and settings in EEPROM (both **confirmed** and *anticipated*)
+* `F00500` - *Car Menu: Active Cruise Control (ACC)*
+* `F00510` - *Car Menu: Interior light (ambient light)*
+* `F00520` - *Car Menu: Parking system (APS / RVC)*
+* `F00530` - *Car Menu: Braking way reduction (AWV)*
+* `F00540` - *Car Menu: Lane departure warning (LDW/HCA)*
+* `F00550` - *Car Menu: Lane change assist (SWA)*
+* `F00560` - *Car Menu: Exterior light (CH/LH)*
+* `F00570` - *Car Menu: Battery level*
+* `F00580` - *Car Menu: Windows*
+* `F00590` - *Car Menu: Air Condition*
+* `F005A0` - *Car Menu: On-board Computer*
+* `F005B0` - *Car Menu: TPMS (RDK)*
+* `F005C0` - **Car Menu: Wiper Service + Rain Sensor**
+* `F005D0` - *Car Menu: Service interval (SIA)*
+* `F005E0` - *Car Menu: Seat memory*
+* `F005F0` - *Car Menu: TPMS Central lock system*
+* `F00600` - *Car Menu: Compass*
+* `F00610` - **Car Menu: Audi Drive Select (Charisma)**
+* `F00620` - *Car Menu: Oil level*
+* `F00630` - **Car Menu: VIN + Keys**
+* `F00640` - *Car Menu: Clock*
+* `F00650` - *Car Menu: Suspension*
+* `F00660` - *Car Menu: HUD*
+* `F00670` - *Car Menu: ZEM*
+* `F00680` - *Car Menu: Hybrid*
+* `F00690` - *Car Menu: Board book*
+* `F006A0` - *Car Menu: UGDO*
+* `F006B0` - *Car Menu: night vision*
+* `F006C0` - *Car Menu: sideview camera*
+* `F006D0` - *Car Menu: rev. seatbelt tensioner (RGS)*
+* `F006E0` - *???*
+* `F006F0` - **Car Menu: Custom button MFSW (Joker)**
+* `F00700` - *Car Menu: Aux heating (look F00590)*
+* `F00710` - *Car Menu: Traffic Sign Recognition (VZE)*
+* `F00720` - *???*
+* `F00F00` - **Language: factory default**
+* `F01100` - **Language: visible languages**
 
 Values to upload (value determinates when option is available - with ignition, at standstill...)
 * `00 E1 F0` - 0, not available
