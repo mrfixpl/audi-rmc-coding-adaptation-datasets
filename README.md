@@ -36,6 +36,10 @@ Confirmed Audi RMC features and settings in EEPROM
 * `F00F00` - Language: factory default
 * `F01100` - Language: visible languages
 
+## Live Data ##
+* `Channel 016` - CD drive temperature; ???, Cooling fan speed, N/A
+* `Channel 019` - Up time, ???, ???, ???
+
 ## BAP ##
 Features available on RMC screen that are coding in other modules and information about it is send over BAP.
 
