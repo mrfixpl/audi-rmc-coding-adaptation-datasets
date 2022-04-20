@@ -12,6 +12,17 @@ My research is based on a 2012 Audi Q3 equipped with Audi RMC2 non-navigation un
 Depending on vehicle and unit version, RMC can be accessed via address `0x56` or `0x5F`.
 
 ## Coding ##
+* `Byte 01`:`bit 0` - `0`=LHD; `1`=RHD
+* `Byte 02`:`bit 0-3` - `0000`=sedan; `0001`=avant; `0100`=sportback, `0110`=SUV
+* `Byte 03`:`bit 0-1` - Boot screen `00`=default; `01`=S-Line; `10`=S; `11`=RS
+* `Byte 04`:`bit 0-1` - Car Model `00`=A1; `01`=A6; `10`=Q3
+* `Byte 05`:`bit 7` - Ambient Illumination
+* `Byte 06`:`bit 1` - Parking Sensors
+* `Byte 06`:`bit 2` - Rear View Camera
+* `Byte 07`:`bit 6` - Comfort Seats
+* `Byte 08`:`bit 0` - Lane Assist
+* `Byte 08`:`bit 1` - Side Assist
+* `Byte 08`:`bit 3` - Pause Recommendation
 
 ## Adaptation ##
 * `005` - `0` - developer mode off, `1` developer mode on.
