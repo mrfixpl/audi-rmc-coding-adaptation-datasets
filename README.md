@@ -38,6 +38,12 @@ Confirmed Audi RMC features and settings in EEPROM
 * `F00F00` - Language: factory default
 * `F01100` - Language: visible languages
 
+Values to upload (value determinates when option is available - with ignition, at standstill...)
+* `00 E1 F0` - 0, not available
+* `02 C1 B2` - 2
+* `05 B1 55` - 5
+* `07 91 17` - 7
+
 ## Live Data ##
 * `Channel 016` - CD drive temperature; ???, Cooling fan speed, N/A
 * `Channel 019` - Up time, ???, ???, ???
