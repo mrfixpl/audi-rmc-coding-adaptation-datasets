@@ -66,7 +66,8 @@ Features available on RMC screen that are coding in other modules and informatio
 * https://youtu.be/PRefnQfClug
 
 ## System reboot ##
-* Key combination
+* [BACK] + [Control Wheel] + [Upper-Right]
+* https://youtu.be/KxOsZpEe3cY
 
 ## Display screenshot ##
 * Make sure there's an SD card inserted and it's not write protected.
