@@ -23,6 +23,7 @@ Depending on vehicle and unit version, RMC can be accessed via address `0x56` or
 * `Byte 08`:`bit 0` - Lane Assist
 * `Byte 08`:`bit 1` - Side Assist
 * `Byte 08`:`bit 3` - Pause Recommendation
+* `Byte 14`:`bit 0` - `0`=Internal Audio Amplifier, `1`=External Audio Amplifier
 
 ## Adaptation ##
 * `005` - `0` - developer mode off, `1` developer mode on.
