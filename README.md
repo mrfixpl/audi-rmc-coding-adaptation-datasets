@@ -33,7 +33,7 @@ Depending on vehicle and unit version, RMC can be accessed via address `0x56` or
 * `005` - `0` - developer mode off, `1` developer mode on.
 
 ## RMC2 Datasets ##
-Audi RMC features and settings in EEPROM (both **confirmed** and *anticipated*)
+Audi `RMC2` features and settings in EEPROM (both **confirmed** and *anticipated*)
 
 ### Sound System settings ###
 * `F01500` - **Audio: Speakers diagnostics**
@@ -41,41 +41,41 @@ Audi RMC features and settings in EEPROM (both **confirmed** and *anticipated*)
 * `F02500` - **Audio: Speakers configuration**
 
 ### Car Menu options ###
-* `F00500` - **Car Menu: Active Cruise Control (ACC)**
-* `F00510` - **Car Menu: Interior light (ambient light)**
-* `F00520` - **Car Menu: Parking system (APS/RVC)**
-* `F00530` - **Car Menu: Braking way reduction (AWV)**
-* `F00540` - **Car Menu: Lane departure warning (LDW/HCA)**
-* `F00550` - **Car Menu: Lane change assist (SWA)**
-* `F00560` - **Car Menu: Exterior lights (CH/LH/DRL?)**
-* `F00570` - **Car Menu: Battery level**
-* `F00580` - **Car Menu: Windows**
-* `F00590` - **Car Menu: Air Condition**
-* `F005A0` - **Car Menu: On-board Computer (TripComputer/Kombi)**
-* `F005B0` - **Car Menu: Tyre Pressure Monitoring System (TPMS/RDK)**
-* `F005C0` - **Car Menu: Wiper Service + Rain Sensor**
-* `F005D0` - **Car Menu: Service interval (SIA)**
-* `F005E0` - **Car Menu: Comfort Seats (memory)**
-* `F005F0` - **Car Menu: Central Lock**
-* `F00600` - **Car Menu: Compass**
-* `F00610` - **Car Menu: Audi Drive Select (Charisma)**
-* `F00620` - **Car Menu: Oil level**
-* `F00630` - **Car Menu: VIN + Keys**
-* `F00640` - **Car Menu: Clock**
-* `F00650` - **Car Menu: Air Suspension**
-* `F00660` - **Car Menu: Head-Up Display (HUD)**
-* `F00670` - **Car Menu: ZEM (Main Unit settings)**
-* `F00680` - **Car Menu: Hybrid**
-* `F00690` - **Car Menu: Aux heating (Webasto?)**
-* `F006A0` - **Car Menu: Universal Garage Door Opener (HomeLink/UGDO)**
-* `F006B0` - **Car Menu: sideview camera**
-* `F006C0` - **Car Menu: night vision**
-* `F006D0` - **Car Menu: Reverse Seatbelt Tensioner (RGS)**
-* `F006E0` - **Car Menu: Driving School Mode**
-* `F006F0` - **Car Menu: Custom button MFSW (Joker)**
-* `F00700` - *Car Menu: Daylight saving time*
-* `F00710` - **Car Menu: Tilt Angle display (Offroad display)**
-* `F00720` - **Car Menu: Weariness recognition (MKE)**
+* `F00500` - **CarMenu: Active Cruise Control (ACC)**
+* `F00510` - **CarMenu: Interior light (ambient light)**
+* `F00520` - **CarMenu: Parking system (APS/RVC)**
+* `F00530` - **CarMenu: Braking way reduction (AWV)**
+* `F00540` - **CarMenu: Lane departure warning (LDW/HCA)**
+* `F00550` - **CarMenu: Lane change assist (SWA)**
+* `F00560` - **CarMenu: Exterior lights (CH/LH/DRL?)**
+* `F00570` - **CarMenu: Battery level**
+* `F00580` - **CarMenu: Windows**
+* `F00590` - **CarMenu: Air Condition**
+* `F005A0` - **CarMenu: On-board Computer (TripComputer/Kombi)**
+* `F005B0` - **CarMenu: Tyre Pressure Monitoring System (TPMS/RDK)**
+* `F005C0` - **CarMenu: Wiper Service + Rain Sensor**
+* `F005D0` - **CarMenu: Service interval (SIA)**
+* `F005E0` - **CarMenu: Comfort Seats (memory)**
+* `F005F0` - **CarMenu: Central Lock**
+* `F00600` - **CarMenu: Compass**
+* `F00610` - **CarMenu: Audi Drive Select (Charisma)**
+* `F00620` - **CarMenu: Oil level**
+* `F00630` - **CarMenu: VIN + Keys**
+* `F00640` - **CarMenu: Clock**
+* `F00650` - **CarMenu: Air Suspension**
+* `F00660` - **CarMenu: Head-Up Display (HUD)**
+* `F00670` - **CarMenu: ZEM (Main Unit settings)**
+* `F00680` - **CarMenu: Hybrid**
+* `F00690` - **CarMenu: Aux heating (Webasto?)**
+* `F006A0` - **CarMenu: Universal Garage Door Opener (HomeLink/UGDO)**
+* `F006B0` - **CarMenu: sideview camera**
+* `F006C0` - **CarMenu: night vision**
+* `F006D0` - **CarMenu: Reverse Seatbelt Tensioner (RGS)**
+* `F006E0` - **CarMenu: Driving School Mode**
+* `F006F0` - **CarMenu: Custom button MFSW (Joker)**
+* `F00700` - *CarMenu: Daylight saving time*
+* `F00710` - **CarMenu: Tilt Angle display (Offroad display)**
+* `F00720` - **CarMenu: Weariness recognition (MKE)**
 
 ### Languages ###
 * `F00F00` - **Language: factory default**
@@ -83,13 +83,14 @@ Audi RMC features and settings in EEPROM (both **confirmed** and *anticipated*)
 
 ### Other ###
 
-Values to upload (value determinates when option is available - with ignition, at standstill...)
-* `00 E1 F0` - 0, not available
+### CarManu values ###
+Value determines when option is available (with ignition, at standstill, all the time...)
+* `00 E1 F0` - 0, function hidden or not available
 * `02 C1 B2` - 2
 * `05 B1 55` - 5
 * `07 91 17` - 7
 
-Example using OBDeleven
+Example function activation using OBDeleven
 * https://youtu.be/jsi80Yr3aoY
 
 ## Live Data ##
