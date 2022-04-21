@@ -47,6 +47,7 @@ Audi `RMC2` features and settings in EEPROM (both **confirmed** and *anticipated
 * `F00A00` - **Audi Music Interface (AMI) and USB**
 * `F00B00` - **AMI BT (A2DP audio streaming)**
 * `F00C00` - **Analog Audio AUX**
+* `F01300` - **Speech Dialog System (SDS)**
 
 ### Sound System settings ###
 * `F01500` - **Audio: Speakers diagnostics**
