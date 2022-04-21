@@ -116,9 +116,13 @@ Example function activation - parameterization with OBDeleven for Android
 Features available on RMC screen that are coding in other modules and information about it is send over BAP.
 
 ## GEM - Green Engineering Menu ##
+### Usage ###
 * Requires developer mode to be enabled first (check adaptation above).
 * Enter GEM with key combination: **[CAR]** + **[MENU]**
 * Demo: https://youtu.be/jGcJXQZLzEc
+
+### Custom GEM screens ###
+*coming soon...*
 
 ## REM - Red Engineering Menu ##
 * Enter REM with key combination: **[CAR]** + **[BACK]**
@@ -133,6 +137,9 @@ Features available on RMC screen that are coding in other modules and informatio
 * Press and hold buttons **[<]** and **[>]**.
 * Wait for LED confirmation on the control panel.
 * Demo: https://youtu.be/ASmqbM54rZk
+
+## RMC filesystem access ##
+*coming soon...*
 
 ## Reference documents and tools used ##
 * Equipment code search engine: http://prsearch.planetvag.com
