@@ -117,19 +117,21 @@ Features available on RMC screen that are coding in other modules and informatio
 
 ## GEM - Green Engineering Menu ##
 * Requires developer mode to be enabled first (check adaptation above).
-* Enter GEM with key combination.
-* https://youtu.be/jGcJXQZLzEc
+* Enter GEM with key combination: **[CAR]** + **[MENU]**
+* Demo: https://youtu.be/jGcJXQZLzEc
 
 ## REM - Red Engineering Menu ##
-* Enter it with key combination.
-* https://youtu.be/PRefnQfClug
+* Enter REM with key combination: **[CAR]** + **[BACK]**
+* Demo: https://youtu.be/PRefnQfClug
 
 ## System reboot ##
-* [BACK] + [Control Wheel] + [Upper-Right]
-* https://youtu.be/KxOsZpEe3cY
+* Enter it with key combination: **[BACK]** + **[Control Wheel]** + **[Upper-Right]**
+* Demo: https://youtu.be/KxOsZpEe3cY
 
 ## Display screenshot ##
 * Make sure there's an SD card inserted and it's not write protected.
-* Press and hold buttons [<] and [>].
+* Press and hold buttons **[<]** and **[>]**.
 * Wait for LED confirmation on the control panel.
-* https://youtu.be/ASmqbM54rZk
+* Demo: https://youtu.be/ASmqbM54rZk
+
+## Reference ##
