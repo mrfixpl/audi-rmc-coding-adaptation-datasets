@@ -105,8 +105,8 @@ Value determines when option is available (with ignition, at standstill, all the
 * `05 B1 55` - 5
 * `07 91 17` - 7
 
-Example function activation using OBDeleven
-* https://youtu.be/jsi80Yr3aoY
+Example function activation - parameterization with OBDeleven for Android
+* Demo https://youtu.be/jsi80Yr3aoY
 
 ## Live Data ##
 * `Channel 016` - CD drive temperature; ???, Cooling fan speed, N/A
@@ -134,4 +134,7 @@ Features available on RMC screen that are coding in other modules and informatio
 * Wait for LED confirmation on the control panel.
 * Demo: https://youtu.be/ASmqbM54rZk
 
-## Reference ##
+## Reference documents and tools used ##
+* Equipment code search engine: http://prsearch.planetvag.com
+* Checksum calculator: https://crccalc.com
+* OBDeleven diagnostic interface (ref link): http://obdeleven.com/?src=link&ref=Zy245Iacqc6bMTHh
