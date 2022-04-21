@@ -145,4 +145,5 @@ Features available on RMC screen that are coding in other modules and informatio
 ## Reference documents and tools used ##
 * Equipment code search engine: http://prsearch.planetvag.com
 * Checksum calculator: https://crccalc.com
+* ASCII table: https://www.rapidtables.com/code/text/ascii-table.html
 * OBDeleven diagnostic interface (ref link): http://obdeleven.com/?src=link&ref=Zy245Iacqc6bMTHh
