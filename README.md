@@ -1,7 +1,8 @@
 # Audi RMC: Coding, Adaptation, Datasets
 * Figuring out how Audi RMC system is configurable by testing coding, adaptation, datasets, and BAP.
-* This type of infotainment unit is poorly codumented. I hope this is about to be changed.
-* My research is based on a 2012 Audi Q3 equipped with Audi RMC2 non-navigation unit.
+* This type of infotainment unit is poorly documented. I hope this is about to be changed.
+* My research is based on a 2012 Audi Q3 equipped with Audi `RMC2` non-navigation unit and some parameterization files that I found over the internet.
+* Most likely `RMC2` and `RMC4` units are using different dataset addresses.
 
 ![Audi RMC with AudiDriveSelect option](https://github.com/mrfixpl/audi-rmc-coding-adaptation-datasets/blob/main/research%20pictures/RMC-AudiDriveSelect.jpg)
 
