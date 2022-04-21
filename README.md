@@ -2,19 +2,20 @@
 * Figuring out how Audi RMC system is configurable by testing coding, adaptation, datasets, and BAP.
 * This type of infotainment unit is poorly documented. I hope this is about to be changed.
 * My research is based on a 2012 Audi Q3 equipped with Audi `RMC2` non-navigation unit and some parameterization files that I found over the internet.
-* Most likely `RMC2` and `RMC4` units are using different dataset addresses.
 
 ![Audi RMC with AudiDriveSelect option](https://github.com/mrfixpl/audi-rmc-coding-adaptation-datasets/blob/main/research%20pictures/RMC-AudiDriveSelect.jpg)
 
 ## How to tell if I have RMC or other system? ##
 * There are different versions of the RMC system, nav and non-nav, with 6.5" and 7" displays.
+* Not confirmed yet: `RMC2` and `RMC4` units are using different dataset addresses.
+* Not confirmed yet: `RMC2` = `H5x` = 6.5" display; `RMC4` = `H6x` = 7.0" display.
 * Enter Red Engineering Menu and check what's your software train. Audi RMC system firmware starts with `rmc`.
 * https://youtu.be/R2mUmxFPWBQ
 
 ## Control Module address ##
 Depending on vehicle and unit version, RMC can be accessed via address `0x56` or `0x5F`.
 
-## Coding ##
+## RMC2 and RMC4 coding ##
 * `Byte 00`:`bit 0-3` - `0000`=no maps; `0001`=Europe maps; `0010`=NAR maps
 * `Byte 01`:`bit 0` - `0`=LHD; `1`=RHD
 * `Byte 02`:`bit 0-3` - `0000`=sedan; `0001`=avant; `0100`=sportback, `0101`=allroad; `0110`=SUV
@@ -34,6 +35,18 @@ Depending on vehicle and unit version, RMC can be accessed via address `0x56` or
 
 ## RMC2 Datasets ##
 Audi `RMC2` features and settings in EEPROM (both **confirmed** and *anticipated*)
+
+### Basic config ###
+* `F00000` - **General Settings**
+* `F00100` - **HFP**
+* `F00200` - **Bluetooth**
+* `F00300` - **Phone**
+* `F00400` - *Vehicle platform*
+* `F00800` - *Bus assignment*
+* `F00900` - *Units default (speed, temperature, pressure, fuel economy, etc.)*
+* `F00A00` - **Audi Music Interface (AMI) and USB**
+* `F00B00` - **AMI BT (A2DP audio streaming)**
+* `F00C00` - **Analog Audio AUX**
 
 ### Sound System settings ###
 * `F01500` - **Audio: Speakers diagnostics**
@@ -82,6 +95,8 @@ Audi `RMC2` features and settings in EEPROM (both **confirmed** and *anticipated
 * `F01100` - **Language: visible languages**
 
 ### Other ###
+* `F01400` - **Navigation activation code (FEC/FSC)**
+* `F00D00` - *Video In Motion speed limits*
 
 ### CarManu values ###
 Value determines when option is available (with ignition, at standstill, all the time...)
