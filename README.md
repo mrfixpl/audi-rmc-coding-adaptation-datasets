@@ -106,6 +106,10 @@ Value determines when option is available (with ignition, at standstill, all the
 * `05 B1 55` - 5
 * `07 91 17` - 7
 
+### Checksums ###
+* Last 2 bytes is checksum. It's generated with CRC16-CCITT(FALSE).
+* Example: 3 bytes `00 E1 F0` contain value `00` and checksum `E1 F0`.
+
 Example function activation - parameterization with OBDeleven for Android
 * Demo https://youtu.be/jsi80Yr3aoY
 
