@@ -25,7 +25,8 @@ Depending on vehicle and unit version, RMC can be accessed via address `0x56` or
 * `Byte 02`:`bit 0-3` - **Car Body** (`0000`=sedan; `0001`=avant; `0100`=sportback, `0101`=allroad; `0110`=SUV)
 * `Byte 03`:`bit 0-1` - **Boot screen** (`00`=default; `01`=S-Line; `10`=S; `11`=RS)
 * `Byte 04`:`bit 0-1` - **Car Model** (`00`=A1; `01`=A6/A7; `10`=Q3)
-* `Byte 05`:`bit 7` - *Ambient Illumination* (`1`=installed)
+* `Byte 05`:`bit 0` - **Air Condition** (`1`=installed)
+* `Byte 05`:`bit 7` - **Ambient Illumination** (`1`=installed)
 * `Byte 06`:`bit 1` - *Parking Sensors* (`1`=installed)
 * `Byte 06`:`bit 2` - *Rear View Camera* (`1`=installed)
 * `Byte 07`:`bit 6` - *Comfort Seats* (`1`=installed)
@@ -35,7 +36,7 @@ Depending on vehicle and unit version, RMC can be accessed via address `0x56` or
 * `Byte 14`:`bit 0` - *Sound System* (`0`=Internal; `1`=External)
 
 ### To investigate ###
-* `Byte 05`:`bit 0` OR `Byte 10`:`bit 2` - *MFSW?* (`1`=installed)
+* `Byte 10`:`bit 1` - *MFSW?* (`1`=installed)
 * `Byte 11`:`bit 0` - *Mic left* (`1`=installed)
 * `Byte 11`:`bit 1` - *Mic right* (`1`=installed)
 
