@@ -20,29 +20,41 @@ Depending on vehicle and unit version, RMC can be accessed via address `0x56` or
 ## RMC2 and RMC4 coding ##
 ### My findings ###
 ...both **confirmed** and *anticipated*.
-* `Byte 00`:`bit 0-3` - *Navigation* (`0000`=off; `0001`=EU; `0010`=NAR)
-* `Byte 01`:`bit 0` - **Steering Wheel** (`0`=LHD; `1`=RHD)
-* `Byte 02`:`bit 0-3` - **Car Body** (`0000`=sedan; `0001`=avant; `0100`=sportback, `0101`=allroad; `0110`=SUV)
-* `Byte 03`:`bit 0-1` - **Boot screen** (`00`=default; `01`=S-Line; `10`=S; `11`=RS)
-* `Byte 04`:`bit 0-1` - **Car Model** (`00`=A1; `01`=A6/A7; `10`=Q3)
-* `Byte 05`:`bit 0` - **Air Condition** (`1`=installed)
-* `Byte 05`:`bit 7` - **Ambient Illumination** (`1`=installed)
-* `Byte 06`:`bit 1` - *Parking Sensors* (`1`=installed)
-* `Byte 06`:`bit 2` - *Rear View Camera* (`1`=installed)
-* `Byte 07`:`bit 6` - *Comfort Seats* (`1`=installed)
-* `Byte 08`:`bit 0` - *Lane Assist* (`1`=installed)
-* `Byte 08`:`bit 1` - *Side Assist* (`1`=installed)
-* `Byte 08`:`bit 3` - *Pause Recommendation* (`1`=enabled)
-* `Byte 14`:`bit 0` - *Sound System* (`0`=Internal; `1`=External)
+* `Byte 00`
+  * `bits 0-3` - *Navigation* (`0000`=off; `0001`=EU; `0010`=NAR)
+* `Byte 01`
+  * `bit 0` - **Steering Wheel** (`0`=LHD; `1`=RHD)
+* `Byte 02`
+  * `bits 0-3` - **Car Body** (`0000`=sedan; `0001`=avant; `0100`=sportback, `0101`=allroad; `0110`=SUV)
+* `Byte 03`
+  * `bits 0-1` - **Boot screen** (`00`=default; `01`=S-Line; `10`=S; `11`=RS)
+* `Byte 04`
+  * `bits 0-1` - **Car Model** (`00`=A1; `01`=A6/A7; `10`=Q3)
+* `Byte 05`
+  * `bit 0` - **Air Condition** (`1`=installed)
+  * `bit 7` - **Ambient Illumination** (`1`=installed)
+* `Byte 06`
+  * `bit 1` - *Parking Sensors* (`1`=installed)
+  * `bit 2` - *Rear View Camera* (`1`=installed)
+* `Byte 07`
+  * `bit 6` - *Comfort Seats* (`1`=installed)
+* `Byte 08`
+  * `bit 0` - *Lane Assist* (`1`=installed)
+  * `bit 1` - *Side Assist* (`1`=installed)
+  * `bit 3` - *Pause Recommendation* (`1`=enabled)
+* `Byte 14`
+  * `bit 0` - *Sound System* (`0`=Internal; `1`=External)
 
 ### To investigate ###
-* `Byte 10`:`bit 1` - *MFSW?* (`1`=installed)
-* `Byte 11`:`bit 0` - *Mic left* (`1`=installed)
-* `Byte 11`:`bit 1` - *Mic right* (`1`=installed)
+* `Byte 10`
+  * `bit 1` - *MFSW?* (`1`=installed)
+* `Byte 11`
+  * `bit 0` - *Mic left* (`1`=installed)
+  * `bit 1` - *Mic right* (`1`=installed)
 
 
 ## Adaptation ##
-* `005` - `0` - developer mode off, `1` developer mode on.
+* `005` - developer mode (`0`=off; `1`=on)
 
 ## RMC2 Datasets ##
 Audi `RMC2` features and settings in EEPROM (both **confirmed** and *anticipated*).
