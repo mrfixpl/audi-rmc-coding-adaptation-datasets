@@ -153,7 +153,7 @@ Features available on RMC screen that are coding in other modules and informatio
 ## RMC filesystem access ##
 *coming soon...*
 
-## Reference documents and tools used ##
+## Credits, Reference, Tools ##
 * Equipment code search engine: http://prsearch.planetvag.com
 * Checksum calculator: https://crccalc.com
 * ASCII table: https://www.rapidtables.com/code/text/ascii-table.html
