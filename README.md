@@ -36,6 +36,9 @@ Depending on vehicle and unit version, RMC can be accessed via address `0x56` or
 
 ### To investigate ###
 * `Byte 05`:`bit 0` OR `Byte 10`:`bit 2` - *MFSW?* (`1`=installed)
+* `Byte 11`:`bit 0` - *Mic left* (`1`=installed)
+* `Byte 11`:`bit 1` - *Mic right* (`1`=installed)
+
 
 ## Adaptation ##
 * `005` - `0` - developer mode off, `1` developer mode on.
