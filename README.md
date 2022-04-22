@@ -51,9 +51,9 @@ Something A6 Allroad related (*Air Suspension* OR *Tilt Display*) OR *Comfort Se
 
 * `Byte 10`
   * `bit 1` - *MFSW?* (`1`=installed)
-* `Byte 11` or `Byte 13` or `Byte 16`
-  * `bit 0` - *Mic left* (`1`=installed)
-  * `bit 1` - *Mic right* (`1`=installed)
+* `Byte 11`
+  * `bit 0` - *Mic drivers side* (`1`=installed)
+  * `bit 1` - *Mic passengers side* (`1`=installed)
 
 
 ## Adaptation ##
