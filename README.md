@@ -21,7 +21,7 @@ Depending on vehicle and unit version, RMC can be accessed via address `0x56` or
 ### My findings ###
 ...both **confirmed** and *anticipated*.
 * `Byte 00`
-  * `bits 0-3` - *Navigation* (`0000`=off; `0001`=EU; `0010`=NAR)
+  * `bit 0` - *Coding confirmation* (`1`=coded)
 * `Byte 01`
   * `bit 0` - **Steering Wheel** (`0`=LHD; `1`=RHD)
 * `Byte 02`
