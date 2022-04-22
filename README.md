@@ -18,25 +18,30 @@
 Depending on vehicle and unit version, RMC can be accessed via address `0x56` or `0x5F`.
 
 ## RMC2 and RMC4 coding ##
-* `Byte 00`:`bit 0-3` - `0000`=no maps; `0001`=Europe maps; `0010`=NAR maps
-* `Byte 01`:`bit 0` - `0`=LHD; `1`=RHD
-* `Byte 02`:`bit 0-3` - `0000`=sedan; `0001`=avant; `0100`=sportback, `0101`=allroad; `0110`=SUV
-* `Byte 03`:`bit 0-1` - Boot screen `00`=default; `01`=S-Line; `10`=S; `11`=RS
-* `Byte 04`:`bit 0-1` - Car Model `00`=A1; `01`=A6/A7; `10`=Q3
-* `Byte 05`:`bit 7` - Ambient Illumination
-* `Byte 06`:`bit 1` - Parking Sensors
-* `Byte 06`:`bit 2` - Rear View Camera
-* `Byte 07`:`bit 6` - Comfort Seats
-* `Byte 08`:`bit 0` - Lane Assist
-* `Byte 08`:`bit 1` - Side Assist
-* `Byte 08`:`bit 3` - Pause Recommendation
-* `Byte 14`:`bit 0` - `0`=Internal Audio Amplifier; `1`=External Audio Amplifier
+### My findings ###
+...both **confirmed** and *anticipated*.
+* `Byte 00`:`bit 0-3` - *Navigation* (`0000`=off; `0001`=EU; `0010`=NAR)
+* `Byte 01`:`bit 0` - **Steering Wheel** (`0`=LHD; `1`=RHD)
+* `Byte 02`:`bit 0-3` - **Car Body** (`0000`=sedan; `0001`=avant; `0100`=sportback, `0101`=allroad; `0110`=SUV)
+* `Byte 03`:`bit 0-1` - **Boot screen** (`00`=default; `01`=S-Line; `10`=S; `11`=RS)
+* `Byte 04`:`bit 0-1` - **Car Model** (`00`=A1; `01`=A6/A7; `10`=Q3)
+* `Byte 05`:`bit 7` - *Ambient Illumination* (`1`=installed)
+* `Byte 06`:`bit 1` - *Parking Sensors* (`1`=installed)
+* `Byte 06`:`bit 2` - *Rear View Camera* (`1`=installed)
+* `Byte 07`:`bit 6` - *Comfort Seats* (`1`=installed)
+* `Byte 08`:`bit 0` - *Lane Assist* (`1`=installed)
+* `Byte 08`:`bit 1` - *Side Assist* (`1`=installed)
+* `Byte 08`:`bit 3` - *Pause Recommendation* (`1`=enabled)
+* `Byte 14`:`bit 0` - *Sound System* (`0`=Internal; `1`=External)
+
+### To investigate ###
+* `Byte 05`:`bit 0` OR `Byte 10`:`bit 2` - *MFSW?* (`1`=installed)
 
 ## Adaptation ##
 * `005` - `0` - developer mode off, `1` developer mode on.
 
 ## RMC2 Datasets ##
-Audi `RMC2` features and settings in EEPROM (both **confirmed** and *anticipated*)
+Audi `RMC2` features and settings in EEPROM (both **confirmed** and *anticipated*).
 
 ### Basic config ###
 * `F00000` - **General Settings**
@@ -58,38 +63,38 @@ Audi `RMC2` features and settings in EEPROM (both **confirmed** and *anticipated
 
 ### Car Menu options ###
 * `F00500` - **CarMenu: Active Cruise Control (ACC)**
-* `F00510` - **CarMenu: Interior light (ambient light)**
-* `F00520` - **CarMenu: Parking system (APS/RVC)**
-* `F00530` - **CarMenu: Braking way reduction (AWV)**
+* `F00510` - **CarMenu: Interior lights (ambient light)**
+* `F00520` - **CarMenu: Audi Parking System (APS/RVC)**
+* `F00530` - **CarMenu: Braking Way Reduction (AWV)**
 * `F00540` - **CarMenu: Lane departure warning (LDW/HCA)**
-* `F00550` - **CarMenu: Lane change assist (SWA)**
-* `F00560` - **CarMenu: Exterior lights (CH/LH/DRL?)**
+* `F00550` - **CarMenu: Lane Change Assist (SWA)**
+* `F00560` - **CarMenu: Exterior Lights (CH/LH/DRL?)**
 * `F00570` - **CarMenu: Battery level**
 * `F00580` - **CarMenu: Windows**
 * `F00590` - **CarMenu: Air Condition**
 * `F005A0` - **CarMenu: On-board Computer (TripComputer/Kombi)**
 * `F005B0` - **CarMenu: Tyre Pressure Monitoring System (TPMS/RDK)**
-* `F005C0` - **CarMenu: Wiper Service + Rain Sensor**
-* `F005D0` - **CarMenu: Service interval (SIA)**
+* `F005C0` - **CarMenu: Wiper Service Position + Rain Sensor**
+* `F005D0` - **CarMenu: Service Intervals (SIA)**
 * `F005E0` - **CarMenu: Comfort Seats (memory)**
 * `F005F0` - **CarMenu: Central Lock**
 * `F00600` - **CarMenu: Compass**
-* `F00610` - **CarMenu: Audi Drive Select (Charisma)**
-* `F00620` - **CarMenu: Oil level**
+* `F00610` - **CarMenu: Audi Drive Select (ADS/Charisma)**
+* `F00620` - **CarMenu: Oil Level**
 * `F00630` - **CarMenu: VIN + Keys**
 * `F00640` - **CarMenu: Clock**
 * `F00650` - **CarMenu: Air Suspension**
 * `F00660` - **CarMenu: Head-Up Display (HUD)**
-* `F00670` - **CarMenu: ZEM (Main Unit settings)**
+* `F00670` - **CarMenu: ZEM (Central Unit settings)**
 * `F00680` - **CarMenu: Hybrid**
-* `F00690` - **CarMenu: Aux heating (Webasto?)**
+* `F00690` - **CarMenu: Aux Heater (Webasto?)**
 * `F006A0` - **CarMenu: Universal Garage Door Opener (HomeLink/UGDO)**
-* `F006B0` - **CarMenu: sideview camera**
-* `F006C0` - **CarMenu: night vision**
+* `F006B0` - **CarMenu: Sideview Camera**
+* `F006C0` - **CarMenu: Night Bision**
 * `F006D0` - **CarMenu: Reverse Seatbelt Tensioner (RGS)**
-* `F006E0` - **CarMenu: Driving School Mode**
+* `F006E0` - **CarMenu: Driving School Mode (DSM)**
 * `F006F0` - **CarMenu: Custom button MFSW (Joker)**
-* `F00700` - *CarMenu: Daylight saving time*
+* `F00700` - *CarMenu: Daylight Saving Time*
 * `F00710` - **CarMenu: Tilt Angle display (Offroad display)**
 * `F00720` - **CarMenu: Weariness recognition (MKE)**
 
