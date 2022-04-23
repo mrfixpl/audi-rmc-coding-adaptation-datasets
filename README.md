@@ -49,14 +49,16 @@ Depending on vehicle and unit version, RMC can be accessed via address `0x56` or
 
 ### To investigate ###
 * `Byte 05`:`bit 5` OR `Byte 07`:`bit 5`
-Something A6 Allroad related (*Air Suspension* OR *Tilt Display*)
+Something A6 Allroad related (*Air Suspension?* OR *Tilt Display?*)
+* `Byte 05`
+  * `bit 6` - *TPMS?* (`1`=installed)
 * `Byte 08`
   * `bit 6` - *Reverse Seatbelt Tensioner (RGS)?* (`1`=installed)
 * `Byte 10`
   * `bit 1` - *MFSW?* (`1`=installed)
 * `Byte 11`
-  * `bit 0` - *Mic drivers side* (`1`=installed)
-  * `bit 1` - *Mic passengers side* (`1`=installed)
+  * `bit 0` - *Mic drivers side?* (`1`=installed)
+  * `bit 1` - *Mic passengers side?* (`1`=installed)
 
 
 ## Adaptation ##
