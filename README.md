@@ -48,8 +48,8 @@ Depending on vehicle and unit version, RMC can be accessed via address `0x56` or
   * `bit 0` - *Sound System* (`0`=Internal; `1`=External)
 
 ### To investigate ###
-* `Byte 07`:`bit 5` OR `Byte 05`:`bit 5`
-Something A6 Allroad related (*Air Suspension* OR *Tilt Display*) OR *Comfort Seats*
+* `Byte 05`:`bit 5` OR `Byte 07`:`bit 5`
+Something A6 Allroad related (*Air Suspension* OR *Tilt Display*)
 * `Byte 08`
   * `bit 6` - *Reverse Seatbelt Tensioner (RGS)?* (`1`=installed)
 * `Byte 10`
