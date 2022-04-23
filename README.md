@@ -42,6 +42,8 @@ Depending on vehicle and unit version, RMC can be accessed via address `0x56` or
   * `bit 0` - *Lane Assist* (`1`=installed)
   * `bit 1` - *Side Assist* (`1`=installed)
   * `bit 3` - *Pause Recommendation* (`1`=enabled)
+* `Byte 09`
+  * `bit 4` - *Tow bar* (`1`=installed)
 * `Byte 14`
   * `bit 0` - *Sound System* (`0`=Internal; `1`=External)
 
