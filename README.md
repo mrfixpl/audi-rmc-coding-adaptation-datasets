@@ -60,7 +60,13 @@ Something A6 Allroad related (*Air Suspension* OR *Tilt Display*)
 
 
 ## Adaptation ##
-* `005` - developer mode (`0`=off; `1`=on)
+...both **confirmed** and *anticipated*.
+* `005` - **developer mode** (`0`=off; `1`=on)
+* `009` - *bluetooth* (`0`=off; `1`=on)
+* `023` - *display test pattern* (`0`=off; `1`=on)
+* `034` - *Door speaker channel test*
+* `035` - *Voice Command test*
+* `058` - *Speakers test* (`0`=off; `1`=on)
 
 ## RMC2 Datasets ##
 Audi `RMC2` features and settings in EEPROM (both **confirmed** and *anticipated*).
