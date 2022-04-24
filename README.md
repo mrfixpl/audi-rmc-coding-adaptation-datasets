@@ -62,6 +62,8 @@ Depending on vehicle and unit version, RMC can be accessed via address `0x56` or
   * `bit 1` - *Mic passengers side?* (`1`=installed)
 * `Byte 12`
   * `bit 0` - *Radio Tuner Region?* (`0`=NAR; `1`=EU) OR *SiriusXM* (`0`=installed)
+* `Byte 16`
+  * `bit 0` - *Looks like GPS related (100% accuracy in A1/Q3, not so good match in A6/A7)*
 
 ## Adaptation ##
 ...both **confirmed** and *anticipated*.
