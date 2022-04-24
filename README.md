@@ -44,6 +44,8 @@ Depending on vehicle and unit version, RMC can be accessed via address `0x56` or
   * `bit 3` - *Pause Recommendation* (`1`=enabled)
 * `Byte 09`
   * `bit 4` - *Tow bar* (`1`=installed)
+* `Byte 12`
+  * `bits 0-1` - *Radio Antenna* (`02`=with Sirius)
 * `Byte 14`
   * `bit 0` - *Sound System* (`0`=Internal; `1`=External)
 
@@ -60,8 +62,6 @@ Depending on vehicle and unit version, RMC can be accessed via address `0x56` or
 * `Byte 11`
   * `bit 0` - *Mic drivers side?* (`1`=installed)
   * `bit 1` - *Mic passengers side?* (`1`=installed)
-* `Byte 12`
-  * `bit 0` - *Radio Tuner Region?* (`0`=NAR; `1`=EU) OR *SiriusXM* (`0`=installed)
 * `Byte 16`
   * `bit 0` - *Looks like GPS related (100% accuracy in A1/Q3, not so good match in A6/A7)*
 
