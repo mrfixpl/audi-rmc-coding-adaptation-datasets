@@ -55,7 +55,7 @@ Something A6 Allroad related (*Air Suspension?* OR *Tilt Display?*)
 * `Byte 08`
   * `bit 6` - *Reverse Seatbelt Tensioner (RGS)?* (`1`=installed)
 * `Byte 10`
-  * `bit 1` - *MFSW?* (`1`=installed)
+  * `bit 1` - *APS/RVC* (`1`=installed)
 * `Byte 11`
   * `bit 0` - *Mic drivers side?* (`1`=installed)
   * `bit 1` - *Mic passengers side?* (`1`=installed)
