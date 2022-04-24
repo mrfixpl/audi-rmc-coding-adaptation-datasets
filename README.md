@@ -45,7 +45,7 @@ Depending on vehicle and unit version, RMC can be accessed via address `0x56` or
 * `Byte 09`
   * `bit 4` - *Tow bar* (`1`=installed)
 * `Byte 12`
-  * `bits 0-1` - *Radio Antenna* (`02`=with Sirius)
+  * `bits 0-1` - *Radio Antenna* (`01`=A6/A7 specific; `02`=with Sirius; `03`=A1/Q3 specific)
 * `Byte 14`
   * `bit 0` - *Sound System* (`0`=Internal; `1`=External)
 
