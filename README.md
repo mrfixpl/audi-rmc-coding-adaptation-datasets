@@ -60,7 +60,8 @@ Depending on vehicle and unit version, RMC can be accessed via address `0x56` or
 * `Byte 11`
   * `bit 0` - *Mic drivers side?* (`1`=installed)
   * `bit 1` - *Mic passengers side?* (`1`=installed)
-
+* `Byte 12`
+  * `bit 0` - *Radio Tuner Region?* (`0`=NAR; `1`=EU)
 
 ## Adaptation ##
 ...both **confirmed** and *anticipated*.
