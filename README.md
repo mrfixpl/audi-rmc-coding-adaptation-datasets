@@ -8,8 +8,8 @@
 ## How to tell if I have RMC or other system? ##
 * There are different versions of the RMC system, nav and non-nav, with 6.5" and 7" displays.
 * Not confirmed yet: `RMC2` and `RMC4` units are using different dataset addresses.
-* Not confirmed yet: part# `4G0`/`8X0` = `H5x` = `RMC2` *= 6.5" display?*;
-* Not confirmed yet: part# `4G1`/`8X1` = `H6x` = `RMC4` *= 7.0" display?*.
+* Not confirmed yet: part# `4G0`/`8X0` = `H5x` = `RMC2`;
+* Not confirmed yet: part# `4G1`/`8X1` = `H6x` = `RMC4`.
 * There's also `H4x` option available. Not sure what it exactly is.
 * Enter Red Engineering Menu and check what's your software train. Audi RMC system firmware starts with `rmc`.
 * https://youtu.be/R2mUmxFPWBQ
