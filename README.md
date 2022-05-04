@@ -5,20 +5,20 @@
 
 ![Audi RMC with Driving School Mode option](https://github.com/mrfixpl/audi-rmc-coding-adaptation-datasets/blob/main/research%20pictures/RMC-DrivingSchoolMode.jpg?raw=true)
 
-## How to tell if I have RMC or other system? ##
-* There are different versions of the RMC system, nav and non-nav, with 6.5" and 7" displays.
+## How to tell which RMC system I have?
+* There are different versions of the RMC system, nav and non-nav, with 6.5" and 7" displays, pre-facelift and facelift.
 * Not confirmed yet: `RMC2` and `RMC4` units are using different dataset addresses.
 * Not confirmed yet: part# `4G0`/`8X0` = `H5x` = `RMC2`;
 * Not confirmed yet: part# `4G1`/`8X1` = `H6x` = `RMC4`.
 * There's also `H4x` option available. Not sure what it exactly is.
-* Enter Red Engineering Menu and check what's your software train. Audi RMC system firmware starts with `rmc`.
+* Enter Red Engineering Menu and check what's your SW Train. Audi RMC system firmware starts with `rmc`.
 * https://youtu.be/R2mUmxFPWBQ
 
-## Control Module address ##
+## Control Module address
 Depending on vehicle and unit version, RMC can be accessed via address `0x56` or `0x5F`.
 
-## RMC2 and RMC4 coding ##
-### My findings ###
+## `RMC2` and `RMC4` coding
+### My findings
 ...both **confirmed** and *anticipated*.
 * `Byte 00`
   * `bit 0` - *Coding confirmation* (`1`=coded)
@@ -49,7 +49,7 @@ Depending on vehicle and unit version, RMC can be accessed via address `0x56` or
 * `Byte 14`
   * `bit 0` - *Sound System* (`0`=Internal; `1`=External)
 
-### To investigate ###
+### To investigate
 * `Byte 05`:`bit 5` OR `Byte 07`:`bit 5`
 *Something A6 Allroad related* (*Air Suspension?* OR *Tilt Display?*)
 * `Byte 05`
@@ -65,7 +65,7 @@ Depending on vehicle and unit version, RMC can be accessed via address `0x56` or
 * `Byte 16`
   * `bit 0` - *Looks like GPS related (100% accuracy in A1/Q3, not so good match in A6/A7)*
 
-## Adaptation ##
+## `RMC2` and `RMC4` Adaptation
 ...both **confirmed** and *anticipated*.
 * `005` - **developer mode** (`0`=off; `1`=on)
 * `009` - *bluetooth* (`0`=off; `1`=on)
@@ -74,10 +74,10 @@ Depending on vehicle and unit version, RMC can be accessed via address `0x56` or
 * `035` - *Voice Command test*
 * `058` - *Speakers test* (`0`=off; `1`=on)
 
-## RMC2 Datasets ##
+## `RMC2` Datasets
 Audi `RMC2` features and settings in EEPROM (both **confirmed** and *anticipated*).
 
-### Basic config ###
+### `RMC2` Basic config
 * `F00000` - **General Settings**
 * `F00100` - **HFP**
 * `F00200` - **Bluetooth**
@@ -90,12 +90,16 @@ Audi `RMC2` features and settings in EEPROM (both **confirmed** and *anticipated
 * `F00C00` - **Analog Audio AUX**
 * `F01300` - **Speech Dialog System (SDS)**
 
-### Sound System settings ###
+### `RMC2` Sound System settings
 * `F01500` - **Audio: Speakers diagnostics**
 * `F01600` - **Audio: Sound parameters**
 * `F02500` - **Audio: Speakers configuration**
 
-### Car Menu options ###
+### `RMC2` Car Menu options
+Value determines when option is available (with ignition, at standstill, all the time...).
+
+Value `00 E1 F0` = 0 (function hidden or not available); `02 C1 B2` = 2; `05 B1 55` = 5; `07 91 17` = 7.
+
 * `F00500` - **CarMenu: Active Cruise Control (ACC)**
 * `F00510` - **CarMenu: Interior lights (ambient light)**
 * `F00520` - **CarMenu: Audi Parking System (APS/RVC)**
@@ -132,20 +136,13 @@ Audi `RMC2` features and settings in EEPROM (both **confirmed** and *anticipated
 * `F00710` - **CarMenu: Tilt Angle display (Offroad display)**
 * `F00720` - **CarMenu: Weariness recognition (MKE)**
 
-### Languages ###
+### `RMC2` Languages
 * `F00F00` - **Language: factory default**
 * `F01100` - **Language: visible languages**
 
-### Other ###
+### `RMC2` Other
 * `F01400` - **Navigation activation code (FEC/FSC)**
 * `F00D00` - *Video In Motion speed limits*
-
-### CarManu values ###
-Value determines when option is available (with ignition, at standstill, all the time...)
-* `00 E1 F0` - 0, function hidden or not available
-* `02 C1 B2` - 2
-* `05 B1 55` - 5
-* `07 91 17` - 7
 
 ### Checksums ###
 * Last 2 bytes is checksum. It's generated with CRC16-CCITT(FALSE).
