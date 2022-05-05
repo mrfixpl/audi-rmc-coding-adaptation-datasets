@@ -111,7 +111,8 @@ Audi `RMC2` and `RMC4` features and settings in EEPROM (confirmed, *anticipated*
 | CarMenu: Head-Up Display (HUD) | `F00660` | `F00760` |
 | CarMenu: ZEM (Central Unit settings) | `F00670` | `F00770` |
 | CarMenu: Hybrid | `F00680` | `F00780` |
-| CarMenu: Aux Heater (Webasto?) | `F00690` | --- |
+| CarMenu: Onboard manual | --- | `F00790` |
+| CarMenu: Stand heating / Aux heater (Webasto?) | `F00690` | `F007F0` |
 | CarMenu: Universal Garage Door Opener (HomeLink/UGDO) | `F006A0` | `F007A0` |
 | CarMenu: Sideview Camera | `F006B0` | `F007C0` |
 | CarMenu: Night Vision | `F006C0` | `F007B0` |
