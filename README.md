@@ -75,59 +75,51 @@ Depending on vehicle and unit version, RMC can be accessed via address `0x56` or
 * `058` - *Speakers test* (`0`=off; `1`=on)
 
 ## `RMC2` and `RMC4` Datasets
-Audi `RMC2` and `RMC4` features and settings in EEPROM (both **confirmed**, *anticipated*, and *unknown*).
+Audi `RMC2` and `RMC4` features and settings in EEPROM (confirmed, *anticipated*, and *unknown*).
 
-### `RMC2` Car Menu options
-Value determines when option is available (with ignition, at standstill, all the time...).
-
-Value `00 E1 F0` = 0 (function hidden or not available); `02 C1 B2` = 2; `05 B1 55` = 5; `07 91 17` = 7.
-
-* `F00500` - **CarMenu: Active Cruise Control (ACC)**
-* `F00510` - **CarMenu: Interior lights (ambient light)**
-* `F00520` - **CarMenu: Audi Parking System (APS/RVC)**
-* `F00530` - **CarMenu: Braking Way Reduction (AWV)**
-* `F00540` - **CarMenu: Lane departure warning (LDW/HCA)**
-* `F00550` - **CarMenu: Lane Change Assist (SWA)**
-* `F00560` - **CarMenu: Exterior Lights (CH/LH/DRL?)**
-* `F00570` - **CarMenu: Battery level**
-* `F00580` - **CarMenu: Windows**
-* `F00590` - **CarMenu: Air Condition**
-* `F005A0` - **CarMenu: On-board Computer (TripComputer/Kombi)**
-* `F005B0` - **CarMenu: Tyre Pressure Monitoring System (TPMS/RDK)**
-* `F005C0` - **CarMenu: Wiper Service Position + Rain Sensor**
-* `F005D0` - **CarMenu: Service Intervals (SIA)**
-* `F005E0` - **CarMenu: Comfort Seats (memory)**
-* `F005F0` - **CarMenu: Central Lock**
-* `F00600` - **CarMenu: Compass**
-* `F00610` - **CarMenu: Audi Drive Select (ADS/Charisma)**
-* `F00620` - **CarMenu: Oil Level**
-* `F00630` - **CarMenu: VIN + Keys**
-* `F00640` - **CarMenu: Clock**
-* `F00650` - **CarMenu: Air Suspension**
-* `F00660` - **CarMenu: Head-Up Display (HUD)**
-* `F00670` - **CarMenu: ZEM (Central Unit settings)**
-* `F00680` - **CarMenu: Hybrid**
-* `F00690` - **CarMenu: Aux Heater (Webasto?)**
-* `F006A0` - **CarMenu: Universal Garage Door Opener (HomeLink/UGDO)**
-* `F006B0` - **CarMenu: Sideview Camera**
-* `F006C0` - **CarMenu: Night Bision**
-* `F006D0` - **CarMenu: Reverse Seatbelt Tensioner (RGS)**
-* `F006E0` - **CarMenu: Driving School Mode (DSM)**
-* `F006F0` - **CarMenu: Custom button MFSW (Joker)**
-* `F00700` - *CarMenu: Daylight Saving Time*
-* `F00710` - **CarMenu: Tilt Angle display (Offroad display)**
-* `F00720` - **CarMenu: Weariness recognition (MKE)**
-
-### Language
 | Function | `RMC2` address | `RMC4` address |
 | --- | --- | --- |
 | General Settings | `F00000` | --- |
-| Hands-free Profile (HFP) | `F00100` | --- |
-| Bluetooth (BT) | `F00200` | --- |
+| Hands-Free Profile (HFP) | `F00100` | --- |
+| BlueTooth (BT) | `F00200` | --- |
 | Phone | `F00300` | --- |
 | Vehicle platform | `F00400` | --- |
+| CarMenu: Active Cruise Control (ACC) | `F00500` | --- |
+| CarMenu: Interior lights (ambient light) | `F00510` | --- |
+| CarMenu: Audi Parking System (APS/RVC) | `F00520` | --- |
+| CarMenu: Braking Way Reduction (AWV) | `F00530` | --- |
+| CarMenu: Lane departure warning (LDW/HCA) | `F00540` | --- |
+| CarMenu: Lane Change Assist (SWA) | `F00550` | --- |
+| CarMenu: Exterior Lights (CH/LH/DRL?) | `F00560` | --- |
+| CarMenu: Battery level | `F00570` | --- |
+| CarMenu: Windows | `F00580` | --- |
+| CarMenu: Air Condition | `F00590` | --- |
+| CarMenu: On-board Computer (TripComputer/Kombi) | `F005A0` | --- |
+| CarMenu: Tyre Pressure Monitoring System (TPMS/RDK) | `F005B0` | --- |
+| CarMenu: Wiper Service Position + Rain Sensor | `F005C0` | --- |
+| CarMenu: Service Intervals (SIA) | `F005D0` | --- |
+| CarMenu: Comfort Seats (memory) | `F005E0` | --- |
+| CarMenu: Central Lock | `F005F0` | --- |
+| CarMenu: Compass | `F00600` | --- |
+| CarMenu: Audi Drive Select (ADS/Charisma) | `F00610` | --- |
+| CarMenu: Oil Level | `F00620` | --- |
+| CarMenu: VIN + Keys | `F00630` | --- |
+| CarMenu: Clock | `F00640` | --- |
+| CarMenu: Air Suspension | `F00650` | --- |
+| CarMenu: Head-Up Display (HUD) | `F00660` | --- |
+| CarMenu: ZEM (Central Unit settings) | `F00670` | --- |
+| CarMenu: Hybrid | `F00680` | --- |
+| CarMenu: Aux Heater (Webasto?) | `F00690` | --- |
+| CarMenu: Universal Garage Door Opener (HomeLink/UGDO) | `F006A0` | --- |
+| CarMenu: Sideview Camera | `F006B0` | --- |
+| CarMenu: Night Vision | `F006C0` | --- |
+| CarMenu: Reverse Seatbelt Tensioner (RGS) | `F006D0` | --- |
+| CarMenu: Driving School Mode (DSM) | `F006E0` | --- |
+| CarMenu: Custom button MFSW (Joker) | `F006F0` | --- |
+| *CarMenu: Daylight Saving Time* | `F00700` | --- |
+| CarMenu: Tilt Angle display (Offroad display) | `F00710` | --- |
+| CarMenu: Weariness recognition (MKE) | `F00720` | --- |
 | Bus assignment | `F00800` | --- |
-| Default units | `F00900` | --- |
 | Audi Music Interface (AMI) and USB | `F00A00` | --- |
 | AMI BT (A2DP audio streaming) | `F00B00` | --- |
 | Analog Audio (AUX input) | `F00C00` | --- |
@@ -135,6 +127,7 @@ Value `00 E1 F0` = 0 (function hidden or not available); `02 C1 B2` = 2; `05 B1 
 | Audio: Speakers diagnostics | `F01500` | *unknown* |
 | Audio: Sound parameters | `F01600` | *unknown* |
 | Audio: Speakers configuration | `F02500` | *unknown* |
+| Regional: default units | `F00900` | --- |
 | Regional: speed limits (VIM) | `F00D00` | `F01100` |
 | Regional: default language | `F00F00` | `F03700` |
 | Regional: visible languages | `F01100` | `F03100` |
