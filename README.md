@@ -84,16 +84,16 @@ Audi `RMC2` and `RMC4` features and settings in EEPROM (confirmed, *anticipated*
 | BlueTooth (BT) | `F00200` | --- |
 | Phone | `F00300` | --- |
 | Vehicle platform | `F00400` | --- |
-| CarMenu: Active Cruise Control (ACC) | `F00500` | --- |
-| CarMenu: Interior lights (ambient light) | `F00510` | --- |
-| CarMenu: Audi Parking System (APS/RVC) | `F00520` | --- |
-| CarMenu: Braking Way Reduction (AWV) | `F00530` | --- |
-| CarMenu: Lane departure warning (LDW/HCA) | `F00540` | --- |
-| CarMenu: Lane Change Assist (SWA) | `F00550` | --- |
-| CarMenu: Exterior Lights (CH/LH/DRL?) | `F00560` | --- |
-| CarMenu: Battery level | `F00570` | --- |
-| CarMenu: Windows | `F00580` | --- |
-| CarMenu: Air Condition | `F00590` | --- |
+| CarMenu: Active Cruise Control (ACC) | `F00500` | `F00600` |
+| CarMenu: Interior lights (ambient illumination) | `F00510` | `F00610` |
+| CarMenu: Audi Parking System / Rear View Camera (APS/RVC) | `F00520` | `F00620` |
+| CarMenu: Braking Way Reduction (AWV) | `F00530` | `F00630` |
+| CarMenu: Lane departure warning (LDW/HCA) | `F00540` | `F00640` |
+| CarMenu: Lane Change Assist (SWA) | `F00550` | `F00650` |
+| CarMenu: Exterior Lights (CH/LH/DRL) | `F00560` | `F00660` |
+| CarMenu: Battery level | `F00570` | `F00670` |
+| CarMenu: Windows | `F00580` | `F00680` |
+| CarMenu: Air Condition (AC) | `F00590` | `F00690` |
 | CarMenu: On-board Computer (TripComputer/Kombi) | `F005A0` | `F006A0` |
 | CarMenu: Tyre Pressure Monitoring System (TPMS/RDK) | `F005B0` | `F006B0` |
 | CarMenu: Wiper Service Position + Rain Sensor | `F005C0` | `F006C0` |
