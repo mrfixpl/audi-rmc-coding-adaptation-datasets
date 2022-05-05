@@ -136,18 +136,17 @@ Value `00 E1 F0` = 0 (function hidden or not available); `02 C1 B2` = 2; `05 B1 
 * `F00710` - **CarMenu: Tilt Angle display (Offroad display)**
 * `F00720` - **CarMenu: Weariness recognition (MKE)**
 
-### Languages
+### Language
 | Function | `RMC2` address | `RMC4` address |
 | --- | --- | --- |
 | Language: factory default | `F00F00` | `F03700` |
 | Language: visible languages | `F01100` | `F03100` |
 
-### `RMC2` Other
-* `F01400` - **Navigation activation code (FEC/FSC)**
-* `F00D00` - **Video In Motion speed limits**
-
-### `RMC4` Other
-* `F01100` - **Video In Motion speed limits**
+### Other
+| Function | `RMC2` address | `RMC4` address |
+| --- | --- | --- |
+| Navigation activation code (FEC/FSC) | `F01400` | ? |
+| Video In Motion speed limits | `F00D00` | `F01100` |
 
 ### Checksums ###
 * Last 2 bytes is checksum. It's generated with CRC16-CCITT(FALSE).
