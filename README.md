@@ -155,8 +155,10 @@ Example function activation - parameterization with OBDeleven for Android
 * Demo https://youtu.be/jsi80Yr3aoY
 
 ## Live Data
-* `Channel 016` - CD drive temperature; ???, Cooling fan speed, N/A
-* `Channel 019` - Up time, ???, ???, ???
+| Channel | Data | Data | Data | Data |
+| --- | :---: | :---: | :---: | :---: |
+| 016 | CD drive temp. | ??? | Cooling fan RPM | N/A |
+| 019 | Up time | ??? | ??? | ??? |
 
 ## BAP
 Features available on RMC screen that are coding in other modules and information about it is send over BAP.
