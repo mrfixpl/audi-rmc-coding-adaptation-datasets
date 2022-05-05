@@ -103,7 +103,9 @@ Audi `RMC2` and `RMC4` features and settings in EEPROM (confirmed, *anticipated*
 | CarMenu: Compass | `F00600` | `F00700` |
 | CarMenu: Audi Drive Select (ADS/Charisma) | `F00610` | `F00710` |
 | CarMenu: Oil Level | `F00620` | `F00720` |
-| CarMenu: VIN + Keys | `F00630` | `F00730` |
+| CarMenu: VIN + Keys learned | `F00630` | --- |
+| CarMenu: VIN | --- | `F00730` |
+| CarMenu: Keys learned | --- | `F00840` |
 | CarMenu: Clock | `F00640` | `F00740` |
 | CarMenu: Air Suspension | `F00650` | `F00750` |
 | CarMenu: Head-Up Display (HUD) | `F00660` | `F00760` |
@@ -117,7 +119,7 @@ Audi `RMC2` and `RMC4` features and settings in EEPROM (confirmed, *anticipated*
 | CarMenu: Driving School Mode (DSM) | `F006E0` | --- |
 | CarMenu: Custom button MFSW (Joker) | `F006F0` | `F007E0` |
 | *CarMenu: Daylight Saving Time* | `F00700` | `F03500` |
-| CarMenu: Tilt Angle display (Offroad display) | `F00710` | --- |
+| CarMenu: Tilt Angle display (Offroad display) | `F00710` | `F00850` |
 | CarMenu: Rear Seat Entertainmant (RSE) | --- | `F00820` |
 | CarMenu: Weariness recognition (MKE) | `F00720` | `F00830` |
 | Bus assignment | `F00800` | `F03600` |
