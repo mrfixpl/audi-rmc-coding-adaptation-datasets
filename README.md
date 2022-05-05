@@ -127,13 +127,13 @@ Audi `RMC2` and `RMC4` features and settings in EEPROM (confirmed, *anticipated*
 | CarMenu: Custom button MFSW (Joker) | `0xF006F0` | `0xF007E0` |
 | CarMenu: Daylight Saving Time | `0xF00700` | `0xF03500` |
 | CarMenu: Tilt Angle display (Offroad display) | `0xF00710` | `0xF00850` |
-| CarMenu: Traffic Sign Recognition (VZE) | --- | `0xF00810` |
+| CarMenu: Traffic Sign Recognition (VZE) | *N/A*  | `0xF00810` |
 | CarMenu: Rear Seat Entertainmant (RSE) | *N/A* | `0xF00820` |
 | CarMenu: Weariness recognition (MKE) | `0xF00720` | `0xF00830` |
 | Media: Audi Music Interface (AMI) and USB | `0xF00A00` | *N/A* |
 | Media: AMI BT (A2DP audio streaming) | `0xF00B00` | *N/A* |
 | Media: Analog Audio (AUX input) | `0xF00C00` | *N/A* |
-| Media: Import | *N/A* | `0xF00400` |
+| Media: Import (coping and ripping) | *N/A* | `0xF00400` |
 | Media: AMI, A2DP, AUX | *N/A* | `0xF01000` |
 | Audio: Speakers diagnostics | `0xF01500` | *unknown* |
 | Audio: Sound parameters | `0xF01600` | *unknown* |
