@@ -7,11 +7,10 @@
 
 ## How to tell which RMC system I have?
 * There are different versions of the RMC system, nav and non-nav, with 6.5" and 7" displays, pre-facelift and facelift.
-* Not confirmed yet: `RMC2` and `RMC4` units are using different dataset addresses.
-* Not confirmed yet: part# `4G0`/`8X0` = `H5x` = `RMC2`;
-* Not confirmed yet: part# `4G1`/`8X1` = `H6x` = `RMC4`.
+* `RMC2` and `RMC4` units are using different dataset addresses.
+* part # `4G0`/`8X0` = `H5x` = `RMC2`; part # `4G1`/`8X1` = `H6x` = `RMC4`.
 * There's also `H4x` option available. Not sure what it exactly is.
-* Enter Red Engineering Menu and check what's your SW Train. Audi RMC system firmware starts with `rmc`.
+* Distinguish RMC from MMI: enter Red Engineering Menu and check what's your SW Train. Audi RMC system firmware starts with `rmc`, MMI starts with `bbt`, `bnav`, `hnav`.
 * https://youtu.be/R2mUmxFPWBQ
 
 ## Control Module address
