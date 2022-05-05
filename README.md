@@ -1,20 +1,17 @@
 # Audi RMC: Coding, Adaptation, Datasets
 * Figuring out how Audi RMC system is configurable by testing coding, adaptation, datasets, and BAP.
 * This type of infotainment unit is poorly documented. I hope this is about to be changed.
-* My research is based on a 2012 Audi Q3 equipped with Audi `RMC2` non-navigation unit and some parameterization files that I found over the internet.
+* My research is based on a 2012 Audi Q3 equipped with Audi `RMC2` non-navigation unit and some parameterization files that I got from community and found over the internet.
 
 ![Audi RMC with Driving School Mode option](https://github.com/mrfixpl/audi-rmc-coding-adaptation-datasets/blob/main/research%20pictures/RMC-DrivingSchoolMode.jpg?raw=true)
 
 ## How to tell which RMC system I have?
 * There are different versions of the RMC system, nav and non-nav, with 6.5" and 7" displays, pre-facelift and facelift.
+* Distinguish RMC from MMI: enter Red Engineering Menu and check what's your SW Train. Audi RMC system firmware starts with `rmc`, MMI starts with `bbt`, `bnav`, `hnav`. Check this: https://youtu.be/R2mUmxFPWBQ
 * `RMC2` and `RMC4` units are using different dataset addresses.
 * part # `4G0`/`8X0` = `H5x` = `RMC2`; part # `4G1`/`8X1` = `H6x` = `RMC4`.
-* There's also `H4x` option available. Not sure what it exactly is.
-* Distinguish RMC from MMI: enter Red Engineering Menu and check what's your SW Train. Audi RMC system firmware starts with `rmc`, MMI starts with `bbt`, `bnav`, `hnav`.
-* https://youtu.be/R2mUmxFPWBQ
-
-## Control Module address
-Depending on vehicle and unit version, RMC can be accessed via address `0x56` or `0x5F`.
+* There's also `H4x` option available. Not sure what it exactly is. Maybe old `RMC` (`RMC1`)?
+* RMC is usually available at address `0x5F` - infotainment. But in some cases at `0x56` - radio.
 
 ## `RMC2` and `RMC4` coding
 ### My findings
