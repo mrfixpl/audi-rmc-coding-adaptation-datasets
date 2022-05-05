@@ -86,7 +86,7 @@ Audi `RMC2` and `RMC4` features and settings in EEPROM (confirmed, *anticipated*
 | Config: Vehicle platform | `F00400` | --- |
 | Config: Bus assignment | `F00800` | `F03600` |
 | Config: Speech Dialog System (SDS) | `F01300` | --- |
-| Config: WLAN | --- | `F03A00` |
+| Config: WLAN | *N/A* | `F03A00` |
 | CarMenu: Active Cruise Control (ACC) | `F00500` | `F00600` |
 | CarMenu: Interior lights (ambient illumination) | `F00510` | `F00610` |
 | CarMenu: Audi Parking System / Rear View Camera (APS/RVC) | `F00520` | `F00620` |
@@ -114,7 +114,7 @@ Audi `RMC2` and `RMC4` features and settings in EEPROM (confirmed, *anticipated*
 | CarMenu: Head-Up Display (HUD) | `F00660` | `F00760` |
 | CarMenu: ZEM (Central Unit settings) | `F00670` | `F00770` |
 | CarMenu: Hybrid | `F00680` | `F00780` |
-| CarMenu: On- board manual | --- | `F00790` |
+| CarMenu: On-board manual | *N/A* | `F00790` |
 | CarMenu: Stand heating / Aux heater (Webasto?) | `F00690` | `F007F0` |
 | CarMenu: Universal Garage Door Opener (HomeLink/UGDO) | `F006A0` | `F007A0` |
 | CarMenu: Sideview Camera | `F006B0` | `F007C0` |
@@ -124,12 +124,13 @@ Audi `RMC2` and `RMC4` features and settings in EEPROM (confirmed, *anticipated*
 | CarMenu: Custom button MFSW (Joker) | `F006F0` | `F007E0` |
 | CarMenu: Daylight Saving Time | `F00700` | `F03500` |
 | CarMenu: Tilt Angle display (Offroad display) | `F00710` | `F00850` |
+| CarMenu: Traffic Sign Recognition (VZE) | --- | `F00810` |
 | CarMenu: Rear Seat Entertainmant (RSE) | *N/A* | `F00820` |
 | CarMenu: Weariness recognition (MKE) | `F00720` | `F00830` |
-| Media: Audi Music Interface (AMI) and USB | `F00A00` | --- |
-| Media: AMI BT (A2DP audio streaming) | `F00B00` | --- |
-| Media: Analog Audio (AUX input) | `F00C00` | --- |
-| Media: AMI, A2DP, AUX | --- | `F01000` |
+| Media: Audi Music Interface (AMI) and USB | `F00A00` | *N/A* |
+| Media: AMI BT (A2DP audio streaming) | `F00B00` | *N/A* |
+| Media: Analog Audio (AUX input) | `F00C00` | *N/A* |
+| Media: AMI, A2DP, AUX | *N/A* | `F01000` |
 | Audio: Speakers diagnostics | `F01500` | *unknown* |
 | Audio: Sound parameters | `F01600` | *unknown* |
 | Audio: Speakers configuration | `F02500` | *unknown* |
