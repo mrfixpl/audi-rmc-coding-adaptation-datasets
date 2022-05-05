@@ -140,9 +140,16 @@ Value `00 E1 F0` = 0 (function hidden or not available); `02 C1 B2` = 2; `05 B1 
 * `F00F00` - **Language: factory default**
 * `F01100` - **Language: visible languages**
 
+### `RMC4` Languages
+* `F03100` - **Language: visible languages**
+* `F03700` - **Language: factory default**
+
 ### `RMC2` Other
 * `F01400` - **Navigation activation code (FEC/FSC)**
-* `F00D00` - *Video In Motion speed limits*
+* `F00D00` - **Video In Motion speed limits**
+
+### `RMC4` Other
+* `F01100` - **Video In Motion speed limits**
 
 ### Checksums ###
 * Last 2 bytes is checksum. It's generated with CRC16-CCITT(FALSE).
