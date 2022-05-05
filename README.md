@@ -136,13 +136,11 @@ Value `00 E1 F0` = 0 (function hidden or not available); `02 C1 B2` = 2; `05 B1 
 * `F00710` - **CarMenu: Tilt Angle display (Offroad display)**
 * `F00720` - **CarMenu: Weariness recognition (MKE)**
 
-### `RMC2` Languages
-* `F00F00` - **Language: factory default**
-* `F01100` - **Language: visible languages**
-
-### `RMC4` Languages
-* `F03100` - **Language: visible languages**
-* `F03700` - **Language: factory default**
+### Languages
+| Function | `RMC2` address | `RMC4` address |
+| --- | --- | --- |
+| Language: factory default | `F00F00` | `F03700` |
+| Language: visible languages | `F01100` | `F03100` |
 
 ### `RMC2` Other
 * `F01400` - **Navigation activation code (FEC/FSC)**
