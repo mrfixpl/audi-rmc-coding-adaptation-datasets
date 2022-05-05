@@ -116,7 +116,7 @@ Audi `RMC2` and `RMC4` features and settings in EEPROM (confirmed, *anticipated*
 | CarMenu: Reverse Seatbelt Tensioner (RGS) | `F006D0` | --- |
 | CarMenu: Driving School Mode (DSM) | `F006E0` | --- |
 | CarMenu: Custom button MFSW (Joker) | `F006F0` | --- |
-| *CarMenu: Daylight Saving Time* | `F00700` | --- |
+| *CarMenu: Daylight Saving Time* | `F00700` | `F03500` |
 | CarMenu: Tilt Angle display (Offroad display) | `F00710` | --- |
 | CarMenu: Weariness recognition (MKE) | `F00720` | --- |
 | Bus assignment | `F00800` | --- |
@@ -124,6 +124,7 @@ Audi `RMC2` and `RMC4` features and settings in EEPROM (confirmed, *anticipated*
 | AMI BT (A2DP audio streaming) | `F00B00` | --- |
 | Analog Audio (AUX input) | `F00C00` | --- |
 | Speech Dialog System (SDS) | `F01300` | --- |
+| WLAN | --- | `F03A00` |
 | Audio: Speakers diagnostics | `F01500` | *unknown* |
 | Audio: Sound parameters | `F01600` | *unknown* |
 | Audio: Speakers configuration | `F02500` | *unknown* |
@@ -131,6 +132,7 @@ Audi `RMC2` and `RMC4` features and settings in EEPROM (confirmed, *anticipated*
 | Regional: speed limits (VIM) | `F00D00` | `F01100` |
 | Regional: default language | `F00F00` | `F03700` |
 | Regional: visible languages | `F01100` | `F03100` |
+| Regional: default emergency number | --- | `F03800` |
 | Navigation activation code (FEC/FSC) | `F01400` | *unknown* |
 
 ### Checksums
