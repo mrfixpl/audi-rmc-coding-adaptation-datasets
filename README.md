@@ -155,7 +155,7 @@ Example function activation - parameterization with OBDeleven for Android
 * Demo https://youtu.be/jsi80Yr3aoY
 
 ## Live Data
-| Channel | Data | Data | Data | Data |
+| Channel | Data1 | Data2 | Data3 | Data4 |
 | --- | :---: | :---: | :---: | :---: |
 | 016 | CD drive temp. | ??? | Cooling fan RPM | N/A |
 | 019 | Up time | ??? | ??? | ??? |
