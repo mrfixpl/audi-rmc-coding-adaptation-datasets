@@ -80,9 +80,11 @@ Audi `RMC2` and `RMC4` features and settings in EEPROM (confirmed, *anticipated*
 | Function | `RMC2` address | `RMC4` address |
 | --- | --- | --- |
 | Config: General system settings | `F00000` | `F00100` |
-| Config: Hands-Free Profile (HFP) | `F00100` | --- |
-| Config: BlueTooth (BT) | `F00200` | --- |
+| Config: Hands-Free Profile (HFP) | `F00100` | *N/A* |
+| Config: BlueTooth (BT) | `F00200` | *N/A* |
 | Config: Phone | `F00300` | --- |
+| Config: NAD, HFP, BT | --- | `F00300` |
+| Config: UMTS | --- | `F03C00` |
 | Config: Vehicle platform | `F00400` | --- |
 | Config: Bus assignment | `F00800` | `F03600` |
 | Config: Speech Dialog System (SDS) | `F01300` | --- |
