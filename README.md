@@ -79,6 +79,7 @@ Audi `RMC2` and `RMC4` features and settings in EEPROM (confirmed, *anticipated*
 
 | Function | `RMC2` address | `RMC4` address |
 | --- | --- | --- |
+| Config: MOST | *N/A* | `0xF00000` |
 | Config: General system settings | `0xF00000` | `0xF00100` |
 | Config: Hands-Free Profile (HFP) | `0xF00100` | *N/A* |
 | Config: BlueTooth (BT) | `0xF00200` | *N/A* |
@@ -132,6 +133,7 @@ Audi `RMC2` and `RMC4` features and settings in EEPROM (confirmed, *anticipated*
 | Media: Audi Music Interface (AMI) and USB | `0xF00A00` | *N/A* |
 | Media: AMI BT (A2DP audio streaming) | `0xF00B00` | *N/A* |
 | Media: Analog Audio (AUX input) | `0xF00C00` | *N/A* |
+| Media: Import | *N/A* | `0xF00400` |
 | Media: AMI, A2DP, AUX | *N/A* | `0xF01000` |
 | Audio: Speakers diagnostics | `0xF01500` | *unknown* |
 | Audio: Sound parameters | `0xF01600` | *unknown* |
@@ -139,10 +141,11 @@ Audi `RMC2` and `RMC4` features and settings in EEPROM (confirmed, *anticipated*
 | Audio: Input gain offset | --- | `0xF03B00` |
 | Regional: default units | `0xF00900` | --- |
 | Regional: speed limits (VIM) | `0xF00D00` | `0xF01100` |
-| Regional: default language | `0xF00F00` | `0xF03700` |
+| Regional: system language | `0xF00F00` | `0xF03000` |
 | Regional: visible languages | `0xF01100` | `0xF03100` |
-| Regional: default emergency number | --- | `0xF03800` |
-| Navigation activation code (FEC/FSC) | `0xF01400` | *unknown* |
+| Regional: country setting | --- | `0xF03700` |
+| Regional: emergency number | --- | `0xF03800` |
+| Navigation activation code (FEC/FSC) | `0xF01400` | `0xF10000` |
 
 ### Checksums
 * Last 2 bytes is checksum. It's generated with CRC16-CCITT(FALSE).
