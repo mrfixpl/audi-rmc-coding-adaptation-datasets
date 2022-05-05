@@ -86,7 +86,7 @@ Audi `RMC2` and `RMC4` features and settings in EEPROM (confirmed, *anticipated*
 | Config: Phone | `0xF00300` | *N/A* |
 | Config: NAD, HFP, BT | *N/A* | `0xF00300` |
 | Config: UMTS | *N/A* | `0xF03C00` |
-| Config: Vehicle platform | `0xF00400` | --- |
+| Config: Vehicle platform | `0xF00400` | `0xF00500` |
 | Config: Bus assignment | `0xF00800` | `0xF03600` |
 | Config: Speech Dialog System (SDS) | `0xF01300` | --- |
 | Config: WLAN | *N/A* | `0xF03A00` |
