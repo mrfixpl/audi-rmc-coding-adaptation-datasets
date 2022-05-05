@@ -74,23 +74,8 @@ Depending on vehicle and unit version, RMC can be accessed via address `0x56` or
 * `035` - *Voice Command test*
 * `058` - *Speakers test* (`0`=off; `1`=on)
 
-## `RMC2` Datasets
-Audi `RMC2` features and settings in EEPROM (both **confirmed** and *anticipated*).
-
-### `RMC2` Basic config
-* `F00000` - **General Settings**
-* `F00100` - **HFP**
-* `F00200` - **Bluetooth**
-* `F00300` - **Phone**
-* `F00400` - *Vehicle platform*
-* `F00800` - *Bus assignment*
-* `F00900` - *Units default (speed, temperature, pressure, fuel economy, etc.)*
-* `F00A00` - **Audi Music Interface (AMI) and USB**
-* `F00B00` - **AMI BT (A2DP audio streaming)**
-* `F00C00` - **Analog Audio AUX**
-* `F01300` - **Speech Dialog System (SDS)**
-
-
+## `RMC2` and `RMC4` Datasets
+Audi `RMC2` and `RMC4` features and settings in EEPROM (both **confirmed**, *anticipated*, and *unknown*).
 
 ### `RMC2` Car Menu options
 Value determines when option is available (with ignition, at standstill, all the time...).
@@ -136,9 +121,20 @@ Value `00 E1 F0` = 0 (function hidden or not available); `02 C1 B2` = 2; `05 B1 
 ### Language
 | Function | `RMC2` address | `RMC4` address |
 | --- | --- | --- |
-| Audio: Speakers diagnostics | F01500 | *unknown* |
-| Audio: Sound parameters | F01600 | *unknown* |
-| Audio: Speakers configuration | F02500 | *unknown* |
+| General Settings | `F00000` | --- |
+| Hands-free Profile (HFP) | `F00100` | --- |
+| Bluetooth (BT) | `F00200` | --- |
+| Phone | `F00300` | --- |
+| Vehicle platform | `F00400` | --- |
+| Bus assignment | `F00800` | --- |
+| Default units | `F00900` | --- |
+| Audi Music Interface (AMI) and USB | `F00A00` | --- |
+| AMI BT (A2DP audio streaming) | `F00B00` | --- |
+| Analog Audio (AUX input) | `F00C00` | --- |
+| Speech Dialog System (SDS) | `F01300` | --- |
+| Audio: Speakers diagnostics | `F01500` | *unknown* |
+| Audio: Sound parameters | `F01600` | *unknown* |
+| Audio: Speakers configuration | `F02500` | *unknown* |
 | Language: factory default | `F00F00` | `F03700` |
 | Language: visible languages | `F01100` | `F03100` |
 | Navigation activation code (FEC/FSC) | `F01400` | *unknown* |
