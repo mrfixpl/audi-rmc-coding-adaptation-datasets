@@ -78,7 +78,7 @@ Depending on vehicle and unit version, RMC can be accessed via address `0x56` or
 Audi `RMC2` and `RMC4` features and settings in EEPROM (confirmed, *anticipated*, and *unknown*).
 
 | Function | `RMC2` address | `RMC4` address |
-| --- | --- | --- |
+| --- | :---: | :---: |
 | Config: MOST | *N/A* | `0xF00000` |
 | Config: General system settings | `0xF00000` | `0xF00100` |
 | Config: Hands-Free Profile (HFP) | `0xF00100` | *N/A* |
