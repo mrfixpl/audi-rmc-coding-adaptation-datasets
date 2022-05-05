@@ -135,10 +135,10 @@ Value `00 E1 F0` = 0 (function hidden or not available); `02 C1 B2` = 2; `05 B1 
 | Audio: Speakers diagnostics | `F01500` | *unknown* |
 | Audio: Sound parameters | `F01600` | *unknown* |
 | Audio: Speakers configuration | `F02500` | *unknown* |
-| Language: factory default | `F00F00` | `F03700` |
-| Language: visible languages | `F01100` | `F03100` |
+| Regional: speed limits (VIM) | `F00D00` | `F01100` |
+| Regional: default language | `F00F00` | `F03700` |
+| Regional: visible languages | `F01100` | `F03100` |
 | Navigation activation code (FEC/FSC) | `F01400` | *unknown* |
-| Video In Motion speed limits | `F00D00` | `F01100` |
 
 ### Checksums ###
 * Last 2 bytes is checksum. It's generated with CRC16-CCITT(FALSE).
