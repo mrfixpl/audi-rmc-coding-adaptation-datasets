@@ -133,47 +133,48 @@ Audi `RMC2` and `RMC4` features and settings in EEPROM (confirmed, *anticipated*
 | Regional: visible languages | `F01100` | `F03100` |
 | Navigation activation code (FEC/FSC) | `F01400` | *unknown* |
 
-### Checksums ###
+### Checksums
 * Last 2 bytes is checksum. It's generated with CRC16-CCITT(FALSE).
 * Example: 3 bytes `00 E1 F0` contain value `00` and checksum `E1 F0`.
 
 Example function activation - parameterization with OBDeleven for Android
 * Demo https://youtu.be/jsi80Yr3aoY
 
-## Live Data ##
+## Live Data
 * `Channel 016` - CD drive temperature; ???, Cooling fan speed, N/A
 * `Channel 019` - Up time, ???, ???, ???
 
-## BAP ##
+## BAP
 Features available on RMC screen that are coding in other modules and information about it is send over BAP.
 
-## GEM - Green Engineering Menu ##
-### Usage ###
+## GEM - Green Engineering Menu
+### Usage
 * Requires developer mode to be enabled first (check adaptation above).
 * Enter GEM with key combination: **[CAR]** + **[MENU]**
 * Demo: https://youtu.be/jGcJXQZLzEc
 
-### Custom GEM screens ###
+### Custom GEM screens
 *coming soon...*
 
-## REM - Red Engineering Menu ##
+## REM - Red Engineering Menu
 * Enter REM with key combination: **[CAR]** + **[BACK]**
 * Demo: https://youtu.be/PRefnQfClug
 
-## System reboot ##
+## System reboot
 * Enter it with key combination: **[BACK]** + **[Control Wheel]** + **[Upper-Right]**
 * Demo: https://youtu.be/KxOsZpEe3cY
 
-## Display screenshot ##
+## Display screenshot
 * Make sure there's an SD card inserted and it's not write protected.
 * Press and hold buttons **[<]** and **[>]**.
 * Wait for LED confirmation on the control panel.
 * Demo: https://youtu.be/ASmqbM54rZk
 
-## RMC filesystem access ##
+## RMC filesystem access
 *coming soon...*
 
-## Credits, Reference, Tools ##
+## Credits, Reference, Tools
+* Huge thanks to everyone involved in this research!
 * Equipment code search engine: http://prsearch.planetvag.com
 * Checksum calculator: https://crccalc.com
 * RMC2 vw RMC4, optional equipment reserach: https://www.drive2.ru/l/7508336/
