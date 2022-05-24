@@ -21,7 +21,8 @@ YY xx YY xx xx xx zz xx xx zz zz xx xx xx xx xx xx xx xx xx xx YY xx xx xx xx xx
 
 
 proposition Q3 with tilt?
-0xF00800, len: 36
+5F, SA: 20103; Service: EOL;
+EEPROM, address: 0xF00800; len: 36
 00 00 00 01 05 05 02 00
 00 02 02 00 00 00 01 00
 01 01 00 00 00 05 00 04
