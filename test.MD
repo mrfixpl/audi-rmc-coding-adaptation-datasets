@@ -14,6 +14,20 @@ example C7 standard RMC2
 01 00 01 01 05 05 01 00 00 01 01 00 00 00 01 00 01 01 01 00 00 00 00 04 04 04 05 00 02 00 04 00 31 31 9E AF
 example C7 allroad? RMC2
 01 00 01 01 05 05 01 00 00 01 01 00 00 00 01 00 01 01 01 00 00 05 00 04 04 04 05 00 02 00 04 00 31 32 EE 02
+difference between C7 standard and allroad?
+xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx YY xx xx xx xx xx xx xx xx xx xx xx xx xx xx
+difference between Q3 standard and C7 allraod?
+YY xx YY xx xx xx zz xx xx zz zz xx xx xx xx xx xx xx xx xx xx YY xx xx xx xx xx xx xx xx xx xx xx xx xx xx
+
+
+proposition Q3 with tilt?
+0xF00800, len: 36
+00 00 00 01 05 05 02 00
+00 02 02 00 00 00 01 00
+01 01 00 00 00 05 00 04
+04 04 05 00 02 00 04 00
+31 33 69 01
+
 
 
 
