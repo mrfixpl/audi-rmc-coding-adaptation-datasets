@@ -28,10 +28,15 @@
   * `bits 0-1` - **Car Model** (`00`=A1; `01`=A6/A7; `10`=Q3)
 * `Byte 05`
   * `bit 0` - **Air Condition** (`1`=installed)
+  * `bit 6` - **Tire Pressure Monitoring System** (`1`=installed)
   * `bit 7` - **Ambient Illumination** (`1`=installed)
 * `Byte 06`
   * `bit 1` - *Parking Sensors* (`1`=installed)
   * `bit 2` - *Rear View Camera* (`1`=installed)
+  * `bit 3` - *Rain Sensor* (`1`=installed)
+  * `bit 4` - *Central Lock* (`1`=installed)
+  * `bit 5` - *Rear Blind* (`1`=installed)
+  * `bit 6` - *Gear Recommendation / Speed Warning* (`1`=installed)
 * `Byte 07`
   * `bit 6` - *Comfort Seats* (`1`=installed)
 * `Byte 08`
@@ -48,8 +53,6 @@
 ### To investigate
 * `Byte 05`:`bit 5` OR `Byte 07`:`bit 5`
 *Something A6 Allroad related* (*Air Suspension?* OR *Tilt Display?*)
-* `Byte 05`
-  * `bit 6` - *TPMS?* (`1`=installed)
 * `Byte 08`
   * `bit 6` - *Reverse Seatbelt Tensioner (RGS)?* (`1`=installed)
 * `Byte 10`
