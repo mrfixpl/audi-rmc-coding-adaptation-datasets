@@ -194,4 +194,4 @@ Features available on RMC screen that are coding in other modules and informatio
 * Checksum calculator: https://crccalc.com
 * RMC2 vw RMC4, optional equipment reserach: https://www.drive2.ru/l/7508336/
 * ASCII table: https://www.rapidtables.com/code/text/ascii-table.html
-* OBDeleven diagnostic interface (ref link): http://obdeleven.com/?src=link&ref=Zy245Iacqc6bMTHh
+* OBDeleven diagnostic interface (ref link): http://mr-fix.info/redirect/obdeleven
