@@ -1,5 +1,5 @@
 TEST.md
-RMC2
+RMC
 Read databus in 5F,
 Read drive modes in 19
 

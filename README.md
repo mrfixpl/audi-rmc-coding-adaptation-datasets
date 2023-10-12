@@ -8,7 +8,7 @@
 ## How to tell which RMC system I have?
 * There are different versions of the RMC system, nav and non-nav, with 6.5" and 7" displays, pre-facelift and facelift.
 * Distinguish RMC from MMI: enter Red Engineering Menu and check what's your SW Train. Audi RMC system firmware starts with `rmc`, MMI starts with `bbt`, `bnav`, `hnav`. Check this: https://youtu.be/R2mUmxFPWBQ
-* `RMC2` and `RMC4` units are using different dataset addresses.
+* ~~`RMC2` and `RMC4`~~ `RMC` and `MMI` units are using different dataset addresses.
 * part # `4G0`/`8X0` = `H5x` = `RMC2`; part # `4G1`/`8X1` = `H6x` = `RMC4`.
 * There's also `H4x` option available. Not sure what it exactly is. Maybe old `RMC` (`RMC1`)?
 * RMC is usually available at address `0x5F` - infotainment. But in some cases at `0x56` - radio.
@@ -73,10 +73,10 @@
 * `035` - *Voice Command test*
 * `058` - *Speakers test* (`0`=off; `1`=on)
 
-## `RMC2` and `RMC4` Datasets
-Audi `RMC2` and `RMC4` features and settings in EEPROM (confirmed, *anticipated*, and *unknown*).
+## `RMC` and `MMI` Datasets
+Audi `RMC` and `MMI` features and settings in EEPROM (confirmed, *anticipated*, and *unknown*).
 
-| Function | `RMC2` address | `RMC4` address |
+| Function | `RMC` address | `MMI` address |
 | --- | :---: | :---: |
 | Config: MOST | *N/A* | `0xF00000` |
 | Config: General system settings | `0xF00000` | `0xF00100` |
@@ -160,7 +160,7 @@ Example function activation - parameterization with OBDeleven for Android
 | 019 | Up time | ??? | ??? | ??? |
 
 ## BAP
-Features available on RMC screen that are coding in other modules and information about it is send over BAP.
+Features available via RMC/MMI interface that are implemented in other modules. Information about those features and some of the seeeing are send to RMC/MMI via BAP.
 
 ## GEM - Green Engineering Menu
 ### Usage
