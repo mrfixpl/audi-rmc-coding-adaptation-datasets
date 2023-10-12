@@ -82,7 +82,7 @@ Audi `RMC` and `MMI` features and settings in EEPROM (confirmed, *anticipated*, 
 | Config: General system settings | `0xF00000` | `0xF00100` |
 | Config: Hands-Free Profile (HFP) | `0xF00100` | *N/A* |
 | Config: BlueTooth (BT) | `0xF00200` | *N/A* |
-| Config: Phone | `0xF00300` | *N/A* |
+| Config: Telephone | `0xF00300` | *N/A* |
 | Config: NAD, HFP, BT | *N/A* | `0xF00300` |
 | Config: UMTS | *N/A* | `0xF03C00` |
 | Config: Vehicle platform | `0xF00400` | `0xF00500` |
@@ -134,8 +134,8 @@ Audi `RMC` and `MMI` features and settings in EEPROM (confirmed, *anticipated*, 
 | Media: Analog Audio (AUX input) | `0xF00C00` | *N/A* |
 | Media: Import (coping and ripping) | *N/A* | `0xF00400` |
 | Media: AMI, A2DP, AUX | *N/A* | `0xF01000` |
-| Audio: Speakers diagnostics | `0xF01500` | *unknown* |
-| Audio: Sound parameters | `0xF01600` | *unknown* |
+| Audio: Speakers diagnostics (8RX, 9VD, OFF) | `0xF01500` | *unknown* |
+| Audio: Sound parameters (8RX, 9VD, External) | `0xF01600` | *unknown* |
 | Audio: Speakers configuration | `0xF02500` | *unknown* |
 | Audio: Input gain offset | --- | `0xF03B00` |
 | Regional: default units | `0xF00900` | --- |
