@@ -136,7 +136,7 @@ Audi `RMC` and `MMI` features and settings in EEPROM (confirmed, *anticipated*, 
 | Media: AMI, A2DP, AUX | *N/A* | `0xF01000` |
 | Audio: Speakers diagnostics (8RX, 9VD, OFF) | `0xF01500` | *unknown* |
 | Audio: Sound parameters (8RX, 9VD, External) | `0xF01600` | *unknown* |
-| Audio: Speakers configuration | `0xF02500` | *unknown* |
+| Audio: Speakers configuration (8RX, 9VD, External) | `0xF02500` | *unknown* |
 | Audio: Input gain offset | --- | `0xF03B00` |
 | Regional: default units | `0xF00900` | --- |
 | Regional: speed limits (VIM) | `0xF00D00` | `0xF01100` |
