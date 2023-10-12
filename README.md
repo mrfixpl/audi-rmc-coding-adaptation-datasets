@@ -3,7 +3,7 @@
 * This type of infotainment unit is poorly documented. I hope this is about to be changed.
 * My research is based on a 2012 Audi Q3 equipped with Audi `RMC2` non-navigation unit and some parameterization files that I got from community and found over the internet.
 
-![Audi RMC with Driving School Mode option](https://github.com/mrfixpl/audi-rmc-coding-adaptation-datasets/blob/main/research%20pictures/RMC-DrivingSchoolMode.jpg?raw=true)
+![Audi RMC with Driving School Mode option](https://github.com/mrfixpl/audi-rmc-coding-adaptation-datasets/blob/main/research/RMC-DrivingSchoolMode.jpg?raw=true)
 
 ## How to tell which RMC system I have?
 * There are different versions of the RMC system, nav and non-nav, with 6.5" and 7" displays, pre-facelift and facelift.
