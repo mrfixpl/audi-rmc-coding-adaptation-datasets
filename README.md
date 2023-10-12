@@ -153,14 +153,15 @@ Audi `RMC` and `MMI` features and settings in EEPROM (confirmed, *anticipated*, 
 Example function activation - parameterization with OBDeleven for Android
 * Demo https://youtu.be/jsi80Yr3aoY
 
-## Live Data
+## `RMC` Live Data Channels
 | Channel | Data1 | Data2 | Data3 | Data4 |
 | --- | :---: | :---: | :---: | :---: |
 | 016 | CD drive temp. | ??? | Cooling fan RPM | N/A |
 | 019 | Up time | ??? | ??? | ??? |
 
 ## BAP
-Features available via RMC/MMI interface that are implemented in other modules. Information about those features and some of the seeeing are send to RMC/MMI via BAP.
+* Features available via RMC/MMI interface that are implemented in other modules. Information about those features and some of the settings are send to RMC/MMI via BAP protocol.
+* Example: coding for daytime running lights switch is done in module `0x09` but the switch will appear in RMC/MMI menu (which is separate module).
 
 ## GEM - Green Engineering Menu
 ### Usage
