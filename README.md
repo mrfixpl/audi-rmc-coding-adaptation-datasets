@@ -73,8 +73,8 @@
 * `035` - *Voice Command test*
 * `058` - *Speakers test* (`0`=off; `1`=on)
 
-## `RMC` and `MMI` Datasets
-Audi `RMC` and `MMI` features and settings in EEPROM (confirmed, *anticipated*, and *unknown*).
+## `RMC` and `MMI 3G/3G+` Datasets
+Audi `RMC` and `MMI 3G/3G+` features and settings (confirmed, *anticipated*, and *unknown*).
 
 | Function | `RMC` address | `MMI` address |
 | --- | :---: | :---: |
@@ -89,6 +89,7 @@ Audi `RMC` and `MMI` features and settings in EEPROM (confirmed, *anticipated*, 
 | Config: Bus assignment | `0xF00800` | `0xF03600` |
 | Config: Speech Dialog System (SDS) | `0xF01300` | --- |
 | Config: WLAN | *N/A* | `0xF03A00` |
+| Config: DTCP | *N/A* | `0xF02300` |
 | CarMenu: Active Cruise Control (ACC) | `0xF00500` | `0xF00600` |
 | CarMenu: Interior lights (ambient illumination) | `0xF00510` | `0xF00610` |
 | CarMenu: Audi Parking System / Rear View Camera (APS/RVC) | `0xF00520` | `0xF00620` |
