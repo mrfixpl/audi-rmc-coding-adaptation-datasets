@@ -84,12 +84,13 @@ Audi `RMC` and `MMI 3G/3G+` features and settings (confirmed, *anticipated*, and
 | Config: BlueTooth (BT) | `0xF00200` | *N/A* |
 | Config: Telephone | `0xF00300` | *N/A* |
 | Config: NAD, HFP, BT | *N/A* | `0xF00300` |
-| Config: UMTS | *N/A* | `0xF03C00` |
 | Config: Vehicle platform | `0xF00400` | `0xF00500` |
-| Config: Bus assignment | `0xF00800` | `0xF03600` |
 | Config: Speech Dialog System (SDS) | `0xF01300` | --- |
-| Config: WLAN | *N/A* | `0xF03A00` |
 | Config: DTCP | *N/A* | `0xF02300` |
+| Config: Default Body Coordinates | *N/A* | `0xF03400` |
+| Config: Bus assignment | `0xF00800` | `0xF03600` |
+| Config: WLAN | *N/A* | `0xF03A00` |
+| Config: UMTS | *N/A* | `0xF03C00` |
 | CarMenu: Active Cruise Control (ACC) | `0xF00500` | `0xF00600` |
 | CarMenu: Interior lights (ambient illumination) | `0xF00510` | `0xF00610` |
 | CarMenu: Audi Parking System / Rear View Camera (APS/RVC) | `0xF00520` | `0xF00620` |
