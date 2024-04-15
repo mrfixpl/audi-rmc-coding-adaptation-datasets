@@ -140,7 +140,7 @@ Audi `RMC` and `MMI 3G/3G+` features and settings (confirmed, *anticipated*, and
 | Audio: Sound parameters (8RX, 9VD, External) | `0xF01600` | *unknown* |
 | Audio: Speakers configuration (8RX, 9VD, External) | `0xF02500` | *unknown* |
 | Audio: Input gain offset | --- | `0xF03B00` |
-| Regional: default units | `0xF00900` | --- |
+| Regional: default units | `0xF00900` | `0xF00800` |
 | Regional: speed limits (VIM) | `0xF00D00` | `0xF01100` |
 | Regional: system language | `0xF00F00` | `0xF03000` |
 | Regional: visible languages | `0xF01100` | `0xF03100` |
